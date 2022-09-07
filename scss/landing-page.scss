@@ -161,7 +161,7 @@ html {
 //   height: 80%;
 // }
 
-// #confidence {
+// #future {
 //   color: var(--white);
 //   font-weight: 800;
 //   font-size: 70px;
@@ -477,7 +477,13 @@ html {
     margin: auto;
   }
 
-  #confidence {
+  .futureOfOptions {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10%;
+  }
+
+  #future {
     color: var(--white);
     font-size: 45px;
     line-height: 75px;
@@ -493,7 +499,7 @@ html {
     font-size: 43.5px;
     line-height: 75px;
     margin: auto;
-    margin-top: -17%;
+    margin-top: -11%;
     color: var(--blue);
     font-weight: 800;
     letter-spacing: 0.06em;
@@ -652,6 +658,7 @@ html {
   #navbar {
     padding-top: 3%;
     max-width: 768px;
+    width: 95%;
     position: sticky;
     top: 0;
     color: var(--white);
@@ -708,7 +715,7 @@ html {
     display: flex;
     align-items: center;
     list-style: none;
-    margin-right: 3%;
+    // margin-right: 3%;
   }
 
   #navbar ul li:not(:nth-last-of-type(-n + 2)) {
@@ -721,12 +728,12 @@ html {
     width: 200px;
     margin: auto 0px;
     background: transparent;
-    margin-left: 50px;
+    // margin-left: 50px;
     cursor: pointer;
   }
 
   #navbar .logo {
-    margin-left: 5%;
+    // margin-left: 5%;
     margin-top: 2%;
   }
 
@@ -774,9 +781,16 @@ html {
     gap: 25px;
     height: 100%;
     margin: auto;
+    justify-content: space-around;
   }
 
-  #confidence {
+  .futureOfOptions {
+    display: flex;
+    flex-direction: column;
+    // margin-top: 10%;
+  }
+
+  #future {
     color: var(--white);
     font-size: 50px;
     line-height: 75px;
@@ -803,7 +817,6 @@ html {
     display: block;
   }
 
-  .flexDiv img,
   .flexDiv h1,
   .flexDiv p,
   .flexDiv button,
@@ -812,13 +825,17 @@ html {
     width: 100%;
   }
 
-  .flexDiv a {
+  .flexDiv img {
     width: 100%;
-    height: 8% !important;
   }
 
+  // .flexDiv a {
+  //   width: 100%;
+  //   height: 8% !important;
+  // }
+
   .flexDiv a button {
-    height: 80%;
+    height: 100%;
   }
 
   .flexDiv h1 {
@@ -866,11 +883,354 @@ html {
   }
 
   .flexDiv p {
-    width: 80%;
+    width: 100%;
+    margin: unset;
   }
 
   .flexDiv a {
-    height: 44px;
+    height: 32px;
+    width: 244px;
+
+  }
+
+  .flexDiv img:not(:first-child),
+  .flexDiv h3 {
+    display: block;
+  }
+
+  h3 {
+    color: var(--blue);
+  }
+
+}
+
+
+@media only screen and (max-width: 1024px) and (min-width: 769px) {
+  ul,
+  li,
+  li > div,
+  a {
+    background: transparent;
+  }
+
+  #burger {
+    display: none;
+    width: 70px;
+  }
+
+  #overlayMobileMenu {
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    z-index: 100;
+    background-color: black;
+    opacity: 0.5;
+    position: fixed;
+    top: 0;
+  }
+
+  .menu {
+    display: none;
+    width: 160px;
+    height: 230px;
+    margin-right: 5%;
+    background-color: var(--black);
+    position: fixed;
+    top: 7vh;
+    right: 0;
+    color: var(--white);
+    z-index: 200;
+  }
+
+  .menu > ul > li > div:last-child {
+    margin-right: 18px;
+  }
+
+  .menu ul li:last-child a {
+    margin: auto;
+    width: 100%;
+  }
+
+  .menu button {
+    @include button-common-style;
+    color: var(--white);
+    width: 100%;
+    background-color: var(--green);
+    margin: auto;
+  }
+
+  ul li a {
+    color: var(--white);
+    padding: 0.75rem;
+    margin: 0 0.25rem;
+    text-decoration: none;
+    font-size: var(--font-size-m);
+    font-style: normal;
+    font-weight: 500;
+  }
+
+  ul {
+    list-style-type: none;
+  }
+
+  ul li {
+    display: flex;
+    margin-top: 10px;
+  }
+
+  ul li:not(:last-child) div:last-child {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: var(--blue);
+    align-self: center;
+  }
+
+  #navbar ul {
+    margin-bottom: 4%;
+  }
+
+  #navbar > img {
+    margin-bottom: 4%;
+  }
+
+  #navbar {
+    padding-top: 3%;
+    max-width: 1024px;
+    width: 95%;
+    position: sticky;
+    top: 0;
+    color: var(--white);
+    display: flex;
+    justify-content: space-between;
+    z-index: 2;
+    height: var(--nav-height);
+    background: transparent;
+    backdrop-filter: blur(20px);
+    margin: auto;
+  }
+
+  #navbar ul li:not(:last-child) {
+    display: none;
+  }
+
+  #navbar ul li a {
+    color: var(--white);
+    padding: 0.75rem;
+    margin: 0 0.25rem;
+    text-decoration: none;
+    font-size: var(--font-size-m);
+    font-style: normal;
+    font-weight: 500;
+  }
+
+  #navbar ul li button {
+    @include button-common-style;
+    height: 24px;
+    width: 159px;
+    background-color: var(--green);
+    margin-left: 50px;
+    color: var(--white);
+    margin-top: 4px;
+  }  
+  
+
+  #burger {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    // justify-content: center;
+    align-items: center;
+  }
+
+  #burger div {
+    background-color: var(--blue);
+    height: 5px;
+    width: 5px;
+    border-radius: 50%;
+  }
+
+  #navbar ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    // margin-right: 3%;
+  }
+
+  #navbar ul li:not(:nth-last-of-type(-n + 2)) {
+    display: none;
+  }
+
+  .logo {
+    height: 28px;
+    margin-top: 0.3px;
+    width: 200px;
+    margin: auto 0px;
+    background: transparent;
+    // margin-left: 50px;
+    cursor: pointer;
+  }
+
+  #navbar .logo {
+    // margin-left: 5%;
+    margin-top: 2%;
+  }
+
+  #navbar ul li:not(:last-child) {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+  }
+
+  .menu ul li:not(:last-child) div:last-child {
+    margin-left: auto;
+  }
+
+  .landingPageGammaOptions {
+    display: flex;
+    flex-direction: column;
+    max-width: 1024px;
+    width: 100%;
+    height: calc(100vh - var(--nav-height));
+    background-color: var(--dark-gray);
+    opacity: 0.9;
+    filter: blur(20%);
+    scroll-snap-align: end;
+    -webkit-scroll-snap-align: end;
+    margin: 0 auto;
+  }
+
+  .decentralizedGammaPlatformDescription {
+    width: 100%;
+    height: 100%;
+    // margin-top: 15%;
+    justify-content: space-evenly;
+  }
+
+  .defiPlatformAppGammaOptions {
+    display: none;
+  }
+
+  .flexDiv {
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    // margin-left: calc(50px + 1rem);
+    gap: 25px;
+    height: 100%;
+    margin: auto;
+    // margin-top: 5%;
+    justify-content: space-evenly;
+  }
+
+  .futureOfOptions {
+    display: flex;
+    flex-direction: column;
+    // margin-top: 10%;
+  }
+
+  #future {
+    color: var(--white);
+    font-size: 50px;
+    line-height: 75px;
+    // margin-left: -5%;
+    font-weight: 800;
+    letter-spacing: 0.06em;
+    font-style: normal;
+    background: transparent;
+  }
+
+  #ofOptions {
+    font-size: 50px;
+    line-height: 75px;
+    margin-top: -7%;
+    color: var(--blue);
+    font-weight: 800;
+    letter-spacing: 0.06em;
+    font-style: normal;
+    background: transparent;
+  }
+
+  .flexDiv img:not(:first-child),
+  .flexDiv h3 {
+    display: block;
+  }
+
+  .flexDiv h1,
+  .flexDiv p,
+  .flexDiv button,
+  h3 {
+    margin: auto;
+    width: 100%;
+  }
+
+  .flexDiv img {
+    width: 100%;
+  }
+
+  // .flexDiv a {
+  //   width: 100%;
+  //   height: 8% !important;
+  // }
+
+  .flexDiv a button {
+    height: 100%;
+  }
+
+  .flexDiv h1 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 33px;
+    line-height: 57px;
+    letter-spacing: 0.1em;
+    margin-top: -10%;
+  }
+
+  h3 {
+    color: var(--blue);
+  }
+
+  .decentralizedGammaPlatformDescription p {
+    color: var(--white);
+    width: 100%;
+  }
+
+  .flexDiv a {
+    height: 34px;
+    width: 100%;
+    justify-content: flex-end;
+  }
+
+  .flexDiv button {
+    @include button-common-style;
+    height: 34px;
+    width: 100%;
+    background-color: var(--blue);
+    color: var(--white);
+  }
+
+  #navbar ul li:not(:nth-last-of-type(-n + 2)) {
+    display: none;
+  }
+
+  .defiPlatformAppGammaOptions {
+    display: none;
+  }
+
+  .decentralizedGammaPlatformDescription {
+    width: 100%;
+  }
+
+  .flexDiv p {
+    width: 100%;
+    margin: unset;
+  }
+
+  .flexDiv a {
+    height: 32px;
+    width: 244px;
+
   }
 
   .flexDiv img:not(:first-child),
