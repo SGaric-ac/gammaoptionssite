@@ -1,0 +1,189 @@
+#products {
+  max-width: 1500px;
+  margin: auto;
+  /* width: 100%;  */
+  height: calc(100vh - var(--nav-height));
+  scroll-snap-align: end;
+  -webkit-scroll-snap-align: end; }
+
+#products h1 {
+  color: var(--blue);
+  margin-left: 4%;
+  font-size: 70px;
+  font-weight: bolder; }
+
+.productsGrid {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-items: center;
+  height: calc(100vh - var(--nav-height) - 220px); }
+
+.gridProduct {
+  height: 90%;
+  width: 65%;
+  background-color: var(--dark-gray);
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  box-shadow: 7px 10px 11px 0 rgba(0, 0, 0, 0.5);
+  user-select: none; }
+
+.gridProduct img {
+  width: 167px;
+  height: 35px;
+  /*This is for second child */
+  margin: auto;
+  user-select: none; }
+
+.gridProduct:nth-child(2) img {
+  width: 167px;
+  height: 53px; }
+
+.gridProduct:nth-child(3) img {
+  width: 75px;
+  height: 91px; }
+
+.gridProduct:nth-child(4) img {
+  width: 167px;
+  height: 56px; }
+
+.gridProduct span {
+  color: var(--white);
+  font-size: 25px;
+  margin: auto;
+  margin-bottom: 55px;
+  user-select: none;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  line-height: 38px; }
+
+.gridProduct p {
+  /* margin: auto; */
+  text-align: left;
+  /* text-align: ; */
+  color: var(--white);
+  margin: 0px 15px;
+  margin-bottom: 20px;
+  /* align-self: center; */
+  user-select: none;
+  font-size: 16px;
+  line-height: 25px;
+  font-weight: 300; }
+
+.gridProduct > a {
+  text-align: center; }
+
+.gridProduct button {
+  cursor: pointer;
+  border-radius: 5px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: 2.56px;
+  text-shadow: 0px 0px 0px #243e453d;
+  border: none;
+  height: 34px;
+  width: 90%;
+  background-color: var(--green);
+  color: var(--white); }
+
+.gridProduct button:hover {
+  background-color: var(--blue); }
+
+#products > button {
+  cursor: pointer;
+  border-radius: 5px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: 2.56px;
+  text-shadow: 0px 0px 0px #243e453d;
+  border: none;
+  display: block;
+  height: 34px;
+  width: 280px;
+  background-color: var(--blue);
+  color: var(--white);
+  margin-left: auto;
+  margin-bottom: auto;
+  margin-right: 90px; }
+
+#products > button:hover {
+  background-color: #28A9CA; }
+
+.scrollDots {
+  display: none; }
+
+/* tablet */
+@media only screen and (max-width: 744px) and (min-width: 429px) {
+  #products h1 {
+    text-align: center; }
+  #products > button {
+    margin: auto; }
+  .productsGrid {
+    grid-template-rows: 2fr;
+    grid-template-columns: 1fr 1fr;
+    gap: 6%; }
+  .gridProduct {
+    height: 100%;
+    width: 75%; }
+  .gridProduct:nth-child(odd) {
+    margin-left: auto; }
+  .gridProduct:nth-child(even) {
+    margin-right: auto; } }
+
+/* mobile */
+#productsNavbar {
+  display: none; }
+
+@media only screen and (max-width: 428px) {
+  #products {
+    max-width: 428px;
+    height: 80vh; }
+  #products h1 {
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 5%;
+    margin-left: unset;
+    text-align: center; }
+  #productsNavbar {
+    display: flex;
+    background: transparent;
+    justify-content: space-evenly; }
+    #productsNavbar button {
+      color: var(--white);
+      background: transparent;
+      font-size: 25px;
+      border: none;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      line-height: 38px; }
+    #productsNavbar :first-child {
+      color: var(--green); }
+  .productsGrid {
+    grid-template-columns: 1fr;
+    height: calc(100vh - var(--nav-height) - 35%); }
+  .productsGrid .gridProduct:not(:first-child) {
+    display: none; }
+  .gridProduct {
+    margin-top: 10%; }
+  .gridProduct > span {
+    margin-top: 10%; }
+  #products > button {
+    width: 100vw;
+    margin: auto;
+    height: 44px; }
+  .scrollDots {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 5% !important; }
+  .dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: white; }
+  .dot:first-child {
+    background-color: var(--green); } }

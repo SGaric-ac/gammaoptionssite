@@ -1,0 +1,26 @@
+$font-size-m: 16px;
+
+@mixin button-common-style{
+    cursor: pointer;
+    border-radius: 5px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: $font-size-m;
+    letter-spacing: 2.56px;
+    text-shadow: 0px 0px 0px #243e453d;
+    border: none;
+}
+
+// @mixin productsGifs{
+//     .productsGrid .gridProduct img{
+//         content: url('./../gifs/farming.gif');
+//     }
+
+//     .productsGrid .gridProduct:first-child img{
+//         content: url('./../gifs/trade.gif');
+//     }
+
+//     .productsGrid .gridProduct:last-child img{
+//         content: url('./../gifs/hedge.gif');
+//     }
+// }

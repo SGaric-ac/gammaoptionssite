@@ -1,0 +1,885 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,300,500,600");
+// @import "./products.scss";
+// @import "./features.scss";
+// @import "./team.scss";
+// @import "./faq.scss";
+// @import "./connect.scss";
+@import "./utility.scss";
+
+:root {
+  --black: #000000;
+  --blue: #09b9e6;
+  --dark-gray: #111113;
+  --green: #8fce50;
+  --white: #ffffff;
+  --font-size-l: 20px;
+  --font-size-m: 16px;
+  --font-size-xl: 25px;
+  --font-size-xxl: 38px;
+  --font-family-poppins: "Poppins", Helvetica;
+
+  --selected-nav-item-width: unset;
+
+  --selected-nav-item-products-width: unset;
+  --selected-nav-item-features-width: unset;
+  --selected-nav-item-team-width: unset;
+  --selected-nav-item-faq-width: unset;
+  --selected-nav-item-connect-width: unset;
+  --nav-height: 10vh;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-family-poppins);
+  background-image: url("../img/bckgrnd-1-1@1x.png");
+  background-color: var(--dark-gray);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+
+body,
+html {
+  // scroll-snap-points-y: repeat(100vh);
+  scroll-snap-type: y mandatory;
+  -webkit-scroll-snap-type: y mandatory;
+}
+
+// ul,
+// li,
+// li > div,
+// a {
+//   background: transparent;
+// }
+
+// #navbar {
+//   max-width: 1500px;
+//   position: sticky;
+//   top: 0;
+//   color: var(--white);
+//   display: flex;
+//   justify-content: space-between;
+//   z-index: 2;
+//   height: var(--nav-height);
+//   background: transparent;
+//   backdrop-filter: blur(20px);
+//   margin: auto;
+// }
+
+// #navbar ul {
+//   display: flex;
+//   align-items: center;
+//   list-style: none;
+// }
+
+// #navbar ul li:not(:last-child) {
+//   display: flex;
+//   flex-direction: column;
+//   cursor: pointer;
+// }
+
+// #navbar ul {
+//   margin-right: 3%;
+// }
+// // #navbar ul li:last-child {
+// //     margin-right: 50px;
+// // }
+
+// #navbar ul li a {
+//   color: var(--white);
+//   padding: 0.75rem;
+//   margin: 0 0.25rem;
+//   text-decoration: none;
+//   font-size: var(--font-size-m);
+//   font-style: normal;
+//   font-weight: 500;
+// }
+
+// #navbar ul li button {
+//   @include button-common-style;
+//   height: 24px;
+//   width: 159px;
+//   background-color: var(--green);
+//   margin-left: 50px;
+//   color: var(--white);
+//   margin-top: 4px;
+// }
+
+// #navbar ul li button:hover {
+//   background: var(--blue);
+// }
+
+// .logo {
+//   height: 28px;
+//   margin-top: 0.3px;
+//   width: 200px;
+//   margin: auto 0px;
+//   background: transparent;
+//   margin-left: 50px;
+//   cursor: pointer;
+// }
+
+// #navbar ul li:not(:last-child) div:last-child {
+//   width: 4px;
+//   background-color: var(--white);
+//   height: 2px;
+//   align-self: center;
+//   transition: width 0.1s ease-out;
+// }
+
+// /*------------------------------------------------------*/
+
+// .landingPageGammaOptions {
+//   max-width: 1500px;
+//   margin: auto;
+//   width: 100%;
+//   height: calc(100vh - var(--nav-height));
+//   display: flex;
+//   background-color: var(--dark-gray);
+//   opacity: 0.9;
+//   filter: blur(20%);
+//   scroll-snap-align: end;
+//   -webkit-scroll-snap-align: end;
+// }
+
+// .decentralizedGammaPlatformDescription {
+//   width: 50%;
+//   margin-top: 80px;
+//   position: relative;
+// }
+
+// .flexDiv {
+//   width: calc(100% - 50px - 1rem);
+//   display: flex;
+//   flex-direction: column;
+//   align-items: flex-start;
+//   margin-left: calc(50px + 1rem);
+//   gap: 25px;
+//   height: 80%;
+// }
+
+// #confidence {
+//   color: var(--white);
+//   font-weight: 800;
+//   font-size: 70px;
+//   line-height: 105px;
+//   letter-spacing: 0.06em;
+//   font-style: normal;
+//   background: transparent;
+// }
+
+// #ofOptions {
+//   color: var(--blue);
+//   font-weight: 800;
+//   font-size: 68px;
+//   line-height: 105px;
+//   letter-spacing: 0.06em;
+//   font-style: normal;
+//   margin-top: -9%;
+//   background: transparent;
+// }
+
+// .flexDiv img:not(:first-child),
+// .flexDiv h3 {
+//   display: none;
+// }
+
+// // .decentralizedGammaPlatformDescription img{
+// //     margin-left: calc(50px + 1rem);
+// // }
+
+// .decentralizedGammaPlatformDescription h1 {
+//   color: var(--blue);
+//   letter-spacing: 2.56px;
+// }
+
+// .decentralizedGammaPlatformDescription p {
+//   color: var(--white);
+//   margin-top: 100px;
+//   width: 50%;
+// }
+
+// .flexDiv a {
+//   height: 34px;
+//   width: 280px;
+//   justify-content: flex-end;
+//   margin-top: auto;
+// }
+
+// .flexDiv button {
+//   @include button-common-style;
+//   height: 34px;
+//   width: 280px;
+//   background-color: var(--blue);
+//   color: var(--white);
+//   margin-top: auto;
+// }
+
+// .flexDiv button:hover {
+//   background-color: #28a9ca;
+//   cursor: pointer;
+// }
+
+// .defiPlatformAppGammaOptions {
+//   width: 50%;
+//   margin-top: 80px;
+//   color: var(--blue);
+//   font-style: normal;
+//   font-weight: 600;
+//   font-size: var(--font-size-m);
+//   position: relative;
+//   display: flex;
+//   flex-direction: column;
+//   position: relative;
+// }
+
+// .hoverDiv {
+//   height: 80%;
+//   width: calc(100% - 50px - 1rem);
+//   display: flex;
+//   flex-direction: column;
+//   align-items: flex-end;
+// }
+
+// /* .hoverDiv .img {
+//     width: 90%;
+// } */
+
+// .rightSideDescription {
+//   position: relative;
+//   display: flex;
+//   flex-direction: column;
+//   margin-top: auto;
+//   margin-right: auto;
+//   left: 10%;
+//   transition: left 150ms ease-out;
+// }
+
+// .hoverDiv img {
+//   width: 90%;
+//   transition: width 150ms ease-out;
+// }
+
+// .hoverDiv h3 {
+//   font-weight: lighter;
+//   /* transition: all 1500ms ease-out; */
+// }
+
+// .defiPlatformAppGammaOptions p {
+//   color: white;
+//   font-weight: lighter;
+//   color: #898989;
+//   margin-right: 50px;
+// }
+
+// MOBILE
+
+@media only screen and (max-width: 480px) and (min-width: 320px) {
+  ul,
+  li,
+  li > div,
+  a {
+    background: transparent;
+  }
+
+  #burger {
+    display: none;
+    width: 70px;
+  }
+
+  #overlayMobileMenu {
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    z-index: 100;
+    background-color: black;
+    opacity: 0.5;
+    position: fixed;
+    top: 0;
+  }
+
+  .menu {
+    display: none;
+    width: 160px;
+    height: 230px;
+    margin-right: 5%;
+    background-color: var(--black);
+    position: fixed;
+    top: 7vh;
+    right: 0;
+    color: var(--white);
+    z-index: 200;
+  }
+
+  .menu > ul > li > div:last-child {
+    margin-right: 18px;
+  }
+
+  .menu ul li:last-child a {
+    margin: auto;
+    width: 100%;
+  }
+
+  .menu button {
+    @include button-common-style;
+    color: var(--white);
+    width: 100%;
+    background-color: var(--green);
+    margin: auto;
+  }
+
+  ul li a {
+    color: var(--white);
+    padding: 0.75rem;
+    margin: 0 0.25rem;
+    text-decoration: none;
+    font-size: var(--font-size-m);
+    font-style: normal;
+    font-weight: 500;
+  }
+
+  ul {
+    list-style-type: none;
+  }
+
+  ul li {
+    display: flex;
+    margin-top: 10px;
+  }
+
+  ul li:not(:last-child) div:last-child {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: var(--blue);
+    align-self: center;
+  }
+
+  #navbar ul {
+    margin-bottom: 4%;
+  }
+
+  #navbar > img {
+    margin-bottom: 4%;
+  }
+
+  #navbar {
+    padding-top: 3%;
+    max-width: 1500px;
+    position: sticky;
+    top: 0;
+    color: var(--white);
+    display: flex;
+    justify-content: space-between;
+    z-index: 2;
+    height: var(--nav-height);
+    background: transparent;
+    backdrop-filter: blur(20px);
+    margin: auto;
+  }
+
+  #navbar ul li:not(:last-child) {
+    display: none;
+  }
+
+  #burger {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    // justify-content: center;
+    align-items: center;
+  }
+
+  #burger div {
+    background-color: var(--blue);
+    height: 5px;
+    width: 5px;
+    border-radius: 50%;
+  }
+
+  #navbar {
+    max-width: 428px;
+    height: unset;
+  }
+
+  #navbar ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin-right: unset;
+  }
+
+  .logo {
+    height: 28px;
+    margin-top: 0.3px;
+    width: 200px;
+    margin: auto 0px;
+    background: transparent;
+    margin-left: 50px;
+    cursor: pointer;
+  }
+
+  #navbar .logo {
+    margin-left: 5%;
+    margin-top: 5%;
+  }
+
+  .menu ul li:not(:last-child) div:last-child {
+    margin-left: auto;
+  }
+
+  #navbar ul li a {
+    color: var(--white);
+    padding: 0.75rem;
+    margin: 0 0.25rem;
+    text-decoration: none;
+    font-size: var(--font-size-m);
+    font-style: normal;
+    font-weight: 500;
+  }
+
+  .landingPageGammaOptions {
+    display: flex;
+    flex-direction: column;
+    max-width: 480px;
+    margin: auto;
+    width: 100%;
+    height: calc(100vh - var(--nav-height));
+    background-color: var(--dark-gray);
+    opacity: 0.9;
+    filter: blur(20%);
+    scroll-snap-align: end;
+    -webkit-scroll-snap-align: end;
+  }
+
+  .decentralizedGammaPlatformDescription {
+    width: 100%;
+    height: 100%;
+    // margin-top: 15%;
+    justify-content: space-evenly;
+  }
+
+  .defiPlatformAppGammaOptions {
+    display: none;
+  }
+
+  .flexDiv {
+    width: calc(100% - 50px - 1rem);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    // margin-left: calc(50px + 1rem);
+    gap: 25px;
+    height: 100%;
+    margin: auto;
+  }
+
+  #confidence {
+    color: var(--white);
+    font-size: 45px;
+    line-height: 75px;
+    // margin-left: -5%;
+    font-weight: 800;
+    letter-spacing: 0.06em;
+    font-style: normal;
+    background: transparent;
+    margin: auto;
+  }
+
+  #ofOptions {
+    font-size: 43.5px;
+    line-height: 75px;
+    margin: auto;
+    margin-top: -17%;
+    color: var(--blue);
+    font-weight: 800;
+    letter-spacing: 0.06em;
+    font-style: normal;
+    background: transparent;
+  }
+
+  .flexDiv img:not(:first-child),
+  .flexDiv h3 {
+    display: block;
+  }
+
+  .flexDiv img,
+  .flexDiv h1,
+  .flexDiv p,
+  .flexDiv button,
+  h3 {
+    margin: auto;
+    margin-left: -3%;
+    width: 100%;
+  }
+
+  .flexDiv a {
+    width: 100%;
+    height: 8% !important;
+  }
+
+  .flexDiv a button {
+    height: 80%;
+  }
+
+  .flexDiv h1 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 33px;
+    line-height: 57px;
+    letter-spacing: 0.1em;
+    margin-top: -10%;
+  }
+
+  h3 {
+    color: var(--blue);
+  }
+
+  .decentralizedGammaPlatformDescription p {
+    color: var(--white);
+    width: 100%;
+  }
+
+  .flexDiv a {
+    height: 34px;
+    width: 100%;
+    justify-content: flex-end;
+  }
+
+  .flexDiv button {
+    @include button-common-style;
+    height: 34px;
+    width: 100%;
+    background-color: var(--blue);
+    color: var(--white);
+  }
+}
+
+// TABLET
+
+@media only screen and (max-width: 768px) and (min-width: 481px) {
+  ul,
+  li,
+  li > div,
+  a {
+    background: transparent;
+  }
+
+  #burger {
+    display: none;
+    width: 70px;
+  }
+
+  #overlayMobileMenu {
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    z-index: 100;
+    background-color: black;
+    opacity: 0.5;
+    position: fixed;
+    top: 0;
+  }
+
+  .menu {
+    display: none;
+    width: 160px;
+    height: 230px;
+    margin-right: 5%;
+    background-color: var(--black);
+    position: fixed;
+    top: 7vh;
+    right: 0;
+    color: var(--white);
+    z-index: 200;
+  }
+
+  .menu > ul > li > div:last-child {
+    margin-right: 18px;
+  }
+
+  .menu ul li:last-child a {
+    margin: auto;
+    width: 100%;
+  }
+
+  .menu button {
+    @include button-common-style;
+    color: var(--white);
+    width: 100%;
+    background-color: var(--green);
+    margin: auto;
+  }
+
+  ul li a {
+    color: var(--white);
+    padding: 0.75rem;
+    margin: 0 0.25rem;
+    text-decoration: none;
+    font-size: var(--font-size-m);
+    font-style: normal;
+    font-weight: 500;
+  }
+
+  ul {
+    list-style-type: none;
+  }
+
+  ul li {
+    display: flex;
+    margin-top: 10px;
+  }
+
+  ul li:not(:last-child) div:last-child {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: var(--blue);
+    align-self: center;
+  }
+
+  #navbar ul {
+    margin-bottom: 4%;
+  }
+
+  #navbar > img {
+    margin-bottom: 4%;
+  }
+
+  #navbar {
+    padding-top: 3%;
+    max-width: 768px;
+    position: sticky;
+    top: 0;
+    color: var(--white);
+    display: flex;
+    justify-content: space-between;
+    z-index: 2;
+    height: var(--nav-height);
+    background: transparent;
+    backdrop-filter: blur(20px);
+    margin: auto;
+  }
+
+  #navbar ul li:not(:last-child) {
+    display: none;
+  }
+
+  #navbar ul li a {
+    color: var(--white);
+    padding: 0.75rem;
+    margin: 0 0.25rem;
+    text-decoration: none;
+    font-size: var(--font-size-m);
+    font-style: normal;
+    font-weight: 500;
+  }
+
+  #navbar ul li button {
+    @include button-common-style;
+    height: 24px;
+    width: 159px;
+    background-color: var(--green);
+    margin-left: 50px;
+    color: var(--white);
+    margin-top: 4px;
+  }  
+  
+
+  #burger {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    // justify-content: center;
+    align-items: center;
+  }
+
+  #burger div {
+    background-color: var(--blue);
+    height: 5px;
+    width: 5px;
+    border-radius: 50%;
+  }
+
+  #navbar ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin-right: 3%;
+  }
+
+  #navbar ul li:not(:nth-last-of-type(-n + 2)) {
+    display: none;
+  }
+
+  .logo {
+    height: 28px;
+    margin-top: 0.3px;
+    width: 200px;
+    margin: auto 0px;
+    background: transparent;
+    margin-left: 50px;
+    cursor: pointer;
+  }
+
+  #navbar .logo {
+    margin-left: 5%;
+    margin-top: 2%;
+  }
+
+  #navbar ul li:not(:last-child) {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+  }
+
+  .menu ul li:not(:last-child) div:last-child {
+    margin-left: auto;
+  }
+
+  .landingPageGammaOptions {
+    display: flex;
+    flex-direction: column;
+    max-width: 768px;
+    width: 100%;
+    height: calc(100vh - var(--nav-height));
+    background-color: var(--dark-gray);
+    opacity: 0.9;
+    filter: blur(20%);
+    scroll-snap-align: end;
+    -webkit-scroll-snap-align: end;
+    margin: 0 auto;
+  }
+
+  .decentralizedGammaPlatformDescription {
+    width: 100%;
+    height: 100%;
+    // margin-top: 15%;
+    justify-content: space-evenly;
+  }
+
+  .defiPlatformAppGammaOptions {
+    display: none;
+  }
+
+  .flexDiv {
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    // margin-left: calc(50px + 1rem);
+    gap: 25px;
+    height: 100%;
+    margin: auto;
+  }
+
+  #confidence {
+    color: var(--white);
+    font-size: 50px;
+    line-height: 75px;
+    // margin-left: -5%;
+    font-weight: 800;
+    letter-spacing: 0.06em;
+    font-style: normal;
+    background: transparent;
+  }
+
+  #ofOptions {
+    font-size: 50px;
+    line-height: 75px;
+    margin-top: -7%;
+    color: var(--blue);
+    font-weight: 800;
+    letter-spacing: 0.06em;
+    font-style: normal;
+    background: transparent;
+  }
+
+  .flexDiv img:not(:first-child),
+  .flexDiv h3 {
+    display: block;
+  }
+
+  .flexDiv img,
+  .flexDiv h1,
+  .flexDiv p,
+  .flexDiv button,
+  h3 {
+    margin: auto;
+    width: 100%;
+  }
+
+  .flexDiv a {
+    width: 100%;
+    height: 8% !important;
+  }
+
+  .flexDiv a button {
+    height: 80%;
+  }
+
+  .flexDiv h1 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 33px;
+    line-height: 57px;
+    letter-spacing: 0.1em;
+    margin-top: -10%;
+  }
+
+  h3 {
+    color: var(--blue);
+  }
+
+  .decentralizedGammaPlatformDescription p {
+    color: var(--white);
+    width: 100%;
+  }
+
+  .flexDiv a {
+    height: 34px;
+    width: 100%;
+    justify-content: flex-end;
+  }
+
+  .flexDiv button {
+    @include button-common-style;
+    height: 34px;
+    width: 100%;
+    background-color: var(--blue);
+    color: var(--white);
+  }
+
+  #navbar ul li:not(:nth-last-of-type(-n + 2)) {
+    display: none;
+  }
+
+  .defiPlatformAppGammaOptions {
+    display: none;
+  }
+
+  .decentralizedGammaPlatformDescription {
+    width: 100%;
+  }
+
+  .flexDiv p {
+    width: 80%;
+  }
+
+  .flexDiv a {
+    height: 44px;
+  }
+
+  .flexDiv img:not(:first-child),
+  .flexDiv h3 {
+    display: block;
+  }
+
+  h3 {
+    color: var(--blue);
+  }
+
+}
