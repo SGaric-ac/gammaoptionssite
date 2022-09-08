@@ -1,10 +1,10 @@
 const backToTopImg = document.querySelector('.backToTopImg');
 
 
-Array.from(document.querySelectorAll('a[href="#connect"]')).forEach(link => {
+Array.from(document.querySelectorAll('a[href="#contact"]')).forEach(link => {
     link.addEventListener("click", (event) => {
       event.preventDefault();
-      lastMouseEnter = 'connect';
+      lastMouseEnter = 'contact';
 
       const top = connect.getBoundingClientRect().height*5;
   

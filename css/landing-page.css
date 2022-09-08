@@ -15,7 +15,7 @@
   --selected-nav-item-features-width: unset;
   --selected-nav-item-team-width: unset;
   --selected-nav-item-faq-width: unset;
-  --selected-nav-item-connect-width: unset;
+  --selected-nav-item-contact-width: unset;
   --nav-height: 10vh; }
 
 * {
@@ -1294,7 +1294,7 @@ html {
   width: 30% !important;
   border-radius: 8px !important; }
 
-.navUnderline, .navUnderlineProducts, .navUnderlineFeatures, .navUnderlineTeam, .navUnderlineFaq, .navUnderlineConnect {
+.navUnderline, .navUnderlineProducts, .navUnderlineFeatures, .navUnderlineTeam, .navUnderlineFaq, .navUnderlineContact {
   background-color: var(--blue) !important; }
 
 .navUnderlineProducts {
@@ -1309,5 +1309,5 @@ html {
 .navUnderlineFaq {
   width: var(--selected-nav-item-faq-width) !important; }
 
-.navUnderlineConnect {
-  width: var(--selected-nav-item-connect-width) !important; }
+.navUnderlineContact {
+  width: var(--selected-nav-item-contact-width) !important; }
