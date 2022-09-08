@@ -184,11 +184,12 @@ html {
     align-items: flex-start;
     gap: 25px;
     height: 100%;
-    margin: auto; }
+    margin: auto;
+    justify-content: space-evenly; }
   .futureOfOptions {
     display: flex;
     flex-direction: column;
-    margin-top: 10%; }
+    align-self: center; }
   #future {
     color: var(--white);
     font-size: 45px;
@@ -211,13 +212,14 @@ html {
   .flexDiv img:not(:first-child),
   .flexDiv h3 {
     display: block; }
-  .flexDiv img,
   .flexDiv h1,
   .flexDiv p,
   .flexDiv button,
   h3 {
     margin: auto;
     margin-left: -3%;
+    width: 100%; }
+  .flexDiv img {
     width: 100%; }
   .flexDiv a {
     width: 100%;

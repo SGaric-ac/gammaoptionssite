@@ -475,12 +475,14 @@ html {
     gap: 25px;
     height: 100%;
     margin: auto;
+    justify-content: space-evenly;
   }
 
   .futureOfOptions {
     display: flex;
     flex-direction: column;
-    margin-top: 10%;
+    align-self: center;
+    // margin-top: 10%;
   }
 
   #future {
@@ -512,13 +514,17 @@ html {
     display: block;
   }
 
-  .flexDiv img,
+
   .flexDiv h1,
   .flexDiv p,
   .flexDiv button,
   h3 {
     margin: auto;
     margin-left: -3%;
+    width: 100%;
+  }
+
+  .flexDiv img {
     width: 100%;
   }
 
