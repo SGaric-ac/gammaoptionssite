@@ -222,7 +222,8 @@ html {
   ul {
     list-style-type: none; }
   ul li {
-    display: flex;
+    display: flex; }
+  #menu ul li {
     margin-top: 10px; }
   ul li:not(:last-child) div:last-child {
     width: 5px;
@@ -230,13 +231,9 @@ html {
     border-radius: 50%;
     background-color: var(--blue);
     align-self: center; }
-  #navbar ul {
-    margin-bottom: 4%; }
-  #navbar > img {
-    margin-bottom: 4%; }
   #navbar {
-    padding-top: 3%;
-    max-width: 1500px;
+    max-width: 480px;
+    width: 100%;
     position: sticky;
     top: 0;
     color: var(--white);
@@ -259,25 +256,18 @@ html {
     height: 5px;
     width: 5px;
     border-radius: 50%; }
-  #navbar {
-    max-width: 428px;
-    height: unset; }
   #navbar ul {
     display: flex;
     align-items: center;
     list-style: none;
     margin-right: unset; }
   .logo {
+    margin-left: 2.5%;
     height: 28px;
-    margin-top: 0.3px;
     width: 200px;
-    margin: auto 0px;
     background: transparent;
-    margin-left: 50px;
-    cursor: pointer; }
-  #navbar .logo {
-    margin-left: 5%;
-    margin-top: 5%; }
+    cursor: pointer;
+    align-self: center; }
   .menu ul li:not(:last-child) div:last-child {
     margin-left: auto; }
   #navbar ul li a {
@@ -307,7 +297,7 @@ html {
   .defiPlatformAppGammaOptions {
     display: none; }
   .flexDiv {
-    width: calc(100% - 50px - 1rem);
+    width: 95%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -346,15 +336,11 @@ html {
   .flexDiv button,
   h3 {
     margin: auto;
-    margin-left: -3%;
     width: 100%; }
   .flexDiv img {
     width: 100%; }
-  .flexDiv a {
-    width: 100%;
-    height: 8% !important; }
   .flexDiv a button {
-    height: 80%; }
+    height: 100%; }
   .flexDiv h1 {
     font-style: normal;
     font-weight: 600;
@@ -368,7 +354,7 @@ html {
     color: var(--white);
     width: 100%; }
   .flexDiv a {
-    height: 34px;
+    height: 43px;
     width: 100%;
     justify-content: flex-end; }
   .flexDiv button {
@@ -987,9 +973,7 @@ html {
     width: 50%; }
   .flexDiv a {
     height: 34px;
-    width: 280px;
-    justify-content: flex-end;
-    margin-top: auto; }
+    width: 280px; }
   .flexDiv button {
     cursor: pointer;
     border-radius: 5px;
