@@ -6,12 +6,14 @@
     /* width: 100%;  */
     height: calc(100vh - var(--nav-height));
     scroll-snap-align: end;
-    -webkit-scroll-snap-align: end; }
+    -webkit-scroll-snap-align: end;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly; }
   #products h1 {
     color: var(--blue);
     font-size: 40px;
     font-weight: 500;
-    margin-bottom: 5%;
     margin-left: unset;
     text-align: center;
     font-weight: bolder; }
@@ -19,7 +21,7 @@
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: 1fr;
-    height: calc(100vh - var(--nav-height) - 35%);
+    height: 60%;
     justify-items: center; }
   .gridProduct {
     height: 90%;
