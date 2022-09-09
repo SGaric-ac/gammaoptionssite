@@ -678,7 +678,7 @@ html {
   #navbar {
     // padding-top: 3%;
     max-width: 768px;
-    width: 95%;
+    width: 100%;
     position: sticky;
     top: 0;
     color: var(--white);
@@ -744,6 +744,7 @@ html {
 
   .logo {
     height: 28px;
+    margin-left: 2.5%;
     // margin-top: 0.3px;
     width: 200px;
     // margin: auto 0px;
@@ -1025,7 +1026,7 @@ html {
   #navbar {
     // padding-top: 3%;
     max-width: 1024px;
-    width: 95%;
+    width: 100%;
     position: sticky;
     top: 0;
     color: var(--white);
@@ -1091,6 +1092,7 @@ html {
 
   .logo {
     height: 28px;
+    margin-left: 2.5%;
     // margin-top: 0.3px;
     width: 200px;
     // margin: auto 0px;

@@ -445,7 +445,7 @@ html {
     align-self: center; }
   #navbar {
     max-width: 768px;
-    width: 95%;
+    width: 100%;
     position: sticky;
     top: 0;
     color: var(--white);
@@ -496,6 +496,7 @@ html {
     display: none; }
   .logo {
     height: 28px;
+    margin-left: 2.5%;
     width: 200px;
     align-self: center;
     background: transparent;
@@ -686,7 +687,7 @@ html {
     align-self: center; }
   #navbar {
     max-width: 1024px;
-    width: 95%;
+    width: 100%;
     position: sticky;
     top: 0;
     color: var(--white);
@@ -737,6 +738,7 @@ html {
     display: none; }
   .logo {
     height: 28px;
+    margin-left: 2.5%;
     width: 200px;
     align-self: center;
     background: transparent;
