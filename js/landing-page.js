@@ -74,6 +74,7 @@ document.querySelector('.logo').addEventListener("click", event => {
 burgerButton.addEventListener("click", event => {
   overlayMobileMenu.style.display = "block";
   menu.style.display = "block";
+  document.body.classList.add('scrollDisabled');
   // document.querySelector("#navbar ul").style.marginRight = "45px";
   Array.from(burgerButton.getElementsByTagName("div")).forEach((d) => {
     d.classList.add("burgerClicked");
@@ -83,6 +84,7 @@ burgerButton.addEventListener("click", event => {
 overlayMobileMenu.addEventListener("click", event => {
   overlayMobileMenu.style.display = "none";
   menu.style.display = "none";
+  document.body.classList.remove('scrollDisabled');
   Array.from(burgerButton.getElementsByTagName("div")).forEach((d) => {
     d.classList.remove("burgerClicked");
   });

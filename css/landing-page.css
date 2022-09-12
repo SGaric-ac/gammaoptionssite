@@ -1862,3 +1862,6 @@ html {
 
 .navUnderlineContact {
   width: var(--selected-nav-item-contact-width) !important; }
+
+.scrollDisabled {
+  overflow: hidden; }
