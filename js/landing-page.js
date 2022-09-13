@@ -15,7 +15,6 @@ let lastMouseEnter = null;
 let gifIsDone = false;
 
 
-
 const enterNavItem = event => {
   const li = event.target;
   const hoveredNavItemText = li.querySelector('div').children[0].textContent;
@@ -170,13 +169,13 @@ createScrollStopListener(window, function() {
         setTimeout(() => {
           teamGifImg.style.display = "none";
           flexTeamResponsive.style.display = "flex";
-        }, 1250);
+        }, 700);
       } else {
         teamGifImg.src = "./gifs/team-gif.gif";
         setTimeout(() => {
           teamGifImg.style.display = "none";
           flexTeam.style.display = "flex";
-        }, 1250);
+        }, 700);
       }
       // localStorage.setItem('gifIsDone', true);
       gifIsDone = true;

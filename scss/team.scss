@@ -37,17 +37,14 @@
   #team > img {
     display: block;
     align-self: center;
-    // margin: auto;
     width: 75%;
     margin-top: 40px;
   }
 
 
   #flexTeam {
-    // margin-top: 72px;
     height: 100%;
     width: 100%;
-    // justify-content: center;
     display: none;
     flex-direction: column;
     gap: 20px;
@@ -59,10 +56,8 @@
   }
   
   .teamGrid {
-    // width: ;
     display: none;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    // gap: 150px;
     margin: auto 2%;
     margin-top: 5px;
     margin-bottom: 0px;
@@ -80,15 +75,10 @@
   }
 
   #flexTeamResponsive {
-    // margin-top: 60px;
-    // height: 100%;
     width: 100%;
-    // justify-content: center;
     display: none;
     flex-direction: column;
     gap: 7px;
-    // position: absolute;
-    // top: 0px;
     background: transparent;
   }
 
@@ -118,7 +108,225 @@
 
 
 //MINI TABLET
-// @media only screen and (max-width: 768px) and (min-width: 481px) {
 
+@media only screen and (max-width: 768px) and (min-width: 481px) {
 
-// }
+  #team {
+    max-width: 768px;
+    margin: auto;
+    height: calc(100vh - var(--nav-height));
+    width: 100%;
+    scroll-snap-align: end;
+    -webkit-scroll-snap-align: end;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  
+  #team > span {
+    color: var(--blue);
+    font-size: 70px;
+    font-weight: 800;
+    background: transparent;
+    display: block;
+    text-align: center;
+  }
+  
+  #team > img {
+    display: block;
+    margin: auto;
+    width: 50%;
+  }
+  
+  
+  #team h1 {
+    color: var(--blue);
+    margin-left: 50px;
+    font-size: 70px;
+    font-weight: bolder;
+  }
+  
+  #flexTeam {
+    display: none;
+  }
+  
+  
+  .teamGrid {
+    display: none;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    margin: auto 2%;
+    margin-top: 5px;
+    margin-bottom: 0px;
+  }
+  
+  #team span:first-child {
+    display: none;
+  }
+  
+  .teamGrid:last-child {
+    margin-bottom: 20px;
+  }
+
+  #team span:nth-child(2) {
+    display: block;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 29px;
+    color: var(--green);
+  }
+  
+  
+  .teamGrid img {
+    width: 192px;
+    height: 192px;
+    justify-self: center;
+    cursor: pointer;
+  }
+
+  .teamGridResponesive {
+    display: none;
+  }
+  
+  #flexTeamResponsive {
+    display: none;
+  }
+
+  #flexTeamResponsive {
+    width: 100%;
+    display: none;
+    flex-direction: column;
+    gap: 29px;
+    background: transparent;
+  }
+
+  .teamGridResponsive {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 132px;
+    margin: 0 auto;
+    background: transparent;
+  }
+
+  .teamGridResponsive:nth-child(3) img:first-child{
+    margin: auto;
+  }
+
+  .teamGridResponsive img {
+    background: transparent;
+  }
+
+}
+//TABLET
+
+@media only screen and (max-width: 1024px) and (min-width: 769px) {  
+  #team {
+    max-width: 1024px;
+    margin: auto;
+    height: calc(100vh - var(--nav-height));
+    width: 100%;
+    scroll-snap-align: end;
+    -webkit-scroll-snap-align: end;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  
+  #team > span {
+    color: var(--blue);
+    font-size: 70px;
+    font-weight: 800;
+    background: transparent;
+    display: block;
+    text-align: center;
+  }
+  
+  #team > img {
+    display: block;
+    margin: auto;
+    width: 50%;
+  }
+  
+  
+  #team h1 {
+    color: var(--blue);
+    margin-left: 50px;
+    font-size: 70px;
+    font-weight: bolder;
+  }
+  
+  #flexTeam {
+    display: none;
+  }
+  
+  
+  .teamGrid {
+    display: none;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    margin: auto 2%;
+    margin-top: 5px;
+    margin-bottom: 0px;
+  }
+  
+  #team span:first-child {
+    display: none;
+  }
+  
+  .teamGrid:last-child {
+    margin-bottom: 20px;
+  }
+
+  #team span:nth-child(2) {
+    display: block;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 29px;
+    color: var(--green);
+  }
+  
+  
+  .teamGrid img {
+    width: 192px;
+    height: 192px;
+    justify-self: center;
+    cursor: pointer;
+  }
+
+  .teamGridResponesive {
+    display: none;
+  }
+  
+  #flexTeamResponsive {
+    display: none;
+  }
+
+  #flexTeamResponsive {
+    width: 100%;
+    display: none;
+    flex-direction: column;
+    gap: 29px;
+    background: transparent;
+  }
+
+  .teamGridResponsive {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 132px;
+    margin: 0 auto;
+    background: transparent;
+  }
+
+  .teamGridResponsive:nth-child(3) img:first-child{
+    margin: auto;
+  }
+
+  .teamGridResponsive img {
+    background: transparent;
+  }
+
+}
