@@ -1,111 +1,74 @@
-#team {
-  max-width: 1500px;
-  margin: auto;
-  height: calc(100vh - var(--nav-height));
-  width: 100%; }
-
-#team > span {
-  color: var(--blue);
-  margin-left: 50px;
-  font-size: 70px;
-  font-weight: 800;
-  background: transparent; }
-
-#team > img {
-  width: 100%; }
-
-#team h1 {
-  color: var(--blue);
-  margin-left: 50px;
-  font-size: 70px;
-  font-weight: bolder; }
-
-#flexTeam {
-  height: 100%;
-  width: 100%;
-  display: none;
-  flex-direction: column;
-  gap: 20px; }
-
-.teamGrid {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  margin: auto 4%;
-  margin-top: 115px;
-  margin-bottom: 0px; }
-
-.teamGrid:last-child {
-  margin-bottom: 20px; }
-
-.teamGrid img {
-  width: 192px;
-  height: 192px;
-  justify-self: center;
-  cursor: pointer; }
-
-.personInformationsOverlay {
-  position: fixed;
-  top: 0px;
-  height: 100vh;
-  width: 100vw;
-  background-color: black;
-  z-index: 300;
-  background-image: unset;
-  display: flex;
-  justify-content: center; }
-
-.personInformationsContainer {
-  width: 45vw;
-  height: 40vh;
-  background-color: olivedrab;
-  align-self: center;
-  background-image: unset;
-  display: grid;
-  grid-template-columns: 30% 70%; }
-
-.personInformationsContainer > img {
-  background: transparent;
-  margin: auto; }
-
-.personInformationsContainer:first-child {
-  background: transparent; }
-
-.aboutPerson {
-  display: flex;
-  flex-direction: column; }
-
-.nameAndLinksToSocialMedia {
-  display: flex;
-  justify-content: flex-end;
-  position: relative;
-  height: 50px; }
-
-.nameAndLinksToSocialMedia > span {
-  position: absolute;
-  left: 30px;
-  align-self: center;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 31px;
-  line-height: 46px;
-  text-transform: uppercase;
-  color: var(--blue); }
-
-.nameAndLinksToSocialMedia > img {
-  margin: 10px; }
-
-.aboutPerson > span {
-  font-style: normal;
-  font-weight: 300;
-  font-size: 20px;
-  line-height: 31px;
-  color: #8FCE51;
-  margin-left: 30px; }
-
-.textAbout {
-  font-style: normal;
-  font-weight: 300;
-  font-size: 20px;
-  line-height: 34px;
-  color: var(--white);
-  margin-left: 30px; }
+@media only screen and (max-width: 480px) and (min-width: 320px) {
+  #team {
+    max-width: 480px;
+    margin: auto;
+    height: calc(100vh - var(--nav-height));
+    width: 100%;
+    scroll-snap-align: end;
+    -webkit-scroll-snap-align: end;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly; }
+  #team > span {
+    color: var(--blue);
+    font-size: 70px;
+    font-weight: 800;
+    background: transparent;
+    text-align: center; }
+  #team span:first-child {
+    display: none; }
+  #team span:nth-child(2) {
+    display: block;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 29px;
+    color: var(--green); }
+  #team > img {
+    display: block;
+    align-self: center;
+    width: 75%;
+    margin-top: 40px; }
+  #flexTeam {
+    height: 100%;
+    width: 100%;
+    display: none;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 60px;
+    display: none;
+    position: absolute;
+    top: 0px;
+    background: transparent; }
+  .teamGrid {
+    display: none;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    margin: auto 2%;
+    margin-top: 5px;
+    margin-bottom: 0px; }
+  .teamGrid:last-child {
+    margin-bottom: 20px; }
+  .teamGrid img {
+    width: 192px;
+    height: 192px;
+    justify-self: center;
+    cursor: pointer; }
+  #flexTeamResponsive {
+    width: 100%;
+    display: none;
+    flex-direction: column;
+    gap: 7px;
+    background: transparent; }
+  .teamGridResponsive {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 100px;
+    margin: 0 auto;
+    background: transparent; }
+  .visible {
+    display: flex !important; }
+  .teamGridResponsive img {
+    background: transparent; }
+  .teamGridResponsive:nth-child(3) img:first-child {
+    margin: auto; } }

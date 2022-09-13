@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins:400,300,500,600");
 @import "./products.scss";
 @import "./features.scss";
-// @import "./team.scss";
+@import "./team.scss";
 // @import "./faq.scss";
 // @import "./connect.scss";
 
@@ -575,7 +575,7 @@ html {
   }
 }
 
-// TABLET
+// MINI TABLET
 
 @media only screen and (max-width: 768px) and (min-width: 481px) {
   ul,
