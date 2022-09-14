@@ -835,6 +835,20 @@
     right: 15px;
     background: transparent; } }
 
+.personInformationOverlay {
+  position: fixed;
+  top: 0px;
+  height: 100vh;
+  width: 100vw;
+  background-color: black;
+  z-index: 300;
+  background-image: unset;
+  display: none;
+  justify-content: center; }
+
+.visible {
+  display: flex !important; }
+
 @media only screen and (max-width: 480px) and (min-width: 320px) {
   #team {
     max-width: 480px;
@@ -895,7 +909,7 @@
     width: 100%;
     display: none;
     flex-direction: column;
-    gap: 7px;
+    gap: 15px;
     background: transparent; }
   .teamGridResponsive {
     display: grid;
@@ -903,12 +917,64 @@
     gap: 100px;
     margin: 0 auto;
     background: transparent; }
-  .visible {
-    display: flex !important; }
   .teamGridResponsive img {
     background: transparent; }
   .teamGridResponsive:nth-child(3) img:first-child {
-    margin: auto; } }
+    margin: auto; }
+  .personInformationContainer {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly; }
+  .logoOverlay {
+    height: 70px;
+    width: 60px; }
+  .nameAndLinksToSocialMedia, .nameAndRole {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .nameAndLinksToSocialMedia {
+    gap: 15px; }
+  .nameAndRole {
+    gap: 10px; }
+  .nameAndSurname {
+    color: var(--blue);
+    font-size: 25px;
+    line-height: 37.5px;
+    font-weight: 500; }
+  .role {
+    color: var(--green);
+    font-size: 20px;
+    line-height: 31px;
+    font-weight: 300; }
+  .linksToSocialMedia {
+    display: flex;
+    gap: 25px; }
+  .linksToSocialMedia > a {
+    height: 29px; }
+  .textAbout {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 34px;
+    color: var(--white);
+    background: transparent;
+    width: 90%; }
+  .backButton {
+    width: 90%;
+    cursor: pointer;
+    border-radius: 5px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 2.56px;
+    text-shadow: 0px 0px 0px #243e453d;
+    border: none;
+    background-color: var(--green);
+    color: var(--white);
+    height: 44px; } }
 
 @media only screen and (max-width: 768px) and (min-width: 481px) {
   #team {
@@ -981,7 +1047,61 @@
   .teamGridResponsive:nth-child(3) img:first-child {
     margin: auto; }
   .teamGridResponsive img {
-    background: transparent; } }
+    background: transparent; }
+  .personInformationContainer {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly; }
+  .logoOverlay {
+    height: 70px;
+    width: 60px; }
+  .nameAndLinksToSocialMedia, .nameAndRole {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .nameAndLinksToSocialMedia {
+    gap: 15px; }
+  .nameAndRole {
+    gap: 10px; }
+  .nameAndSurname {
+    color: var(--blue);
+    font-size: 25px;
+    line-height: 37.5px;
+    font-weight: 500; }
+  .role {
+    color: var(--green);
+    font-size: 20px;
+    line-height: 31px;
+    font-weight: 300; }
+  .linksToSocialMedia {
+    display: flex;
+    gap: 25px; }
+  .linksToSocialMedia > a {
+    height: 29px; }
+  .textAbout {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 34px;
+    color: var(--white);
+    background: transparent;
+    width: 90%; }
+  .backButton {
+    width: 90%;
+    cursor: pointer;
+    border-radius: 5px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 2.56px;
+    text-shadow: 0px 0px 0px #243e453d;
+    border: none;
+    background-color: var(--green);
+    color: var(--white);
+    height: 44px; } }
 
 @media only screen and (max-width: 1024px) and (min-width: 769px) {
   #team {
@@ -1054,7 +1174,61 @@
   .teamGridResponsive:nth-child(3) img:first-child {
     margin: auto; }
   .teamGridResponsive img {
-    background: transparent; } }
+    background: transparent; }
+  .personInformationContainer {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly; }
+  .logoOverlay {
+    height: 70px;
+    width: 60px; }
+  .nameAndLinksToSocialMedia, .nameAndRole {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .nameAndLinksToSocialMedia {
+    gap: 15px; }
+  .nameAndRole {
+    gap: 10px; }
+  .nameAndSurname {
+    color: var(--blue);
+    font-size: 25px;
+    line-height: 37.5px;
+    font-weight: 500; }
+  .role {
+    color: var(--green);
+    font-size: 20px;
+    line-height: 31px;
+    font-weight: 300; }
+  .linksToSocialMedia {
+    display: flex;
+    gap: 25px; }
+  .linksToSocialMedia > a {
+    height: 29px; }
+  .textAbout {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 34px;
+    color: var(--white);
+    background: transparent;
+    width: 90%; }
+  .backButton {
+    width: 90%;
+    cursor: pointer;
+    border-radius: 5px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 2.56px;
+    text-shadow: 0px 0px 0px #243e453d;
+    border: none;
+    background-color: var(--green);
+    color: var(--white);
+    height: 44px; } }
 
 @media only screen and (max-width: 1200px) and (min-width: 1024px) {
   #team {
@@ -1092,7 +1266,7 @@
     height: 192px;
     justify-self: center;
     cursor: pointer; }
-  .personInformationsOverlay {
+  .personInformationOverlay {
     position: fixed;
     top: 0px;
     height: 100vh;
@@ -1102,8 +1276,6 @@
     background-image: unset;
     display: none;
     justify-content: center; }
-  .visible {
-    display: flex !important; }
   .teamGridResponesive {
     display: none; }
   #flexTeamResponsive {
@@ -1180,8 +1352,6 @@
     background-image: unset;
     display: none;
     justify-content: center; }
-  .visible {
-    display: flex !important; }
   .teamGridResponesive {
     display: none; }
   #flexTeamResponsive {
