@@ -92,19 +92,20 @@ Array.from(document.querySelectorAll('a[href="#team"]')).forEach(link => {
 
     // if(!sessionStorage.getItem('gifIsDone')){
     if(!gifIsDone){
-      if (isMobile()) {
+      // if (isMobile()) {
+      if (screen.width < 1025) {
         teamGifImg.src = "./gifs/team-gi-tablet-portrait-and-mobilef.gif";
   
         setTimeout(() => {
           teamGifImg.style.display = "none";
           flexTeamResponsive.style.display = "flex";
-        }, 1250);
+        }, 900);
       } else {
         teamGifImg.src = "./gifs/team-gif.gif";
         setTimeout(() => {
           teamGifImg.style.display = "none";
           flexTeam.style.display = "flex";
-        }, 1250);
+        }, 900);
       }
       gifIsDone = true;
     }

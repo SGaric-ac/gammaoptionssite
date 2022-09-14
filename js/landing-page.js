@@ -163,19 +163,19 @@ createScrollStopListener(window, function() {
     }
 
     if(choosenPage.page === 'team' && !gifIsDone){
-      if (isMobile()) {
+      if (screen.width < 1025) {
         teamGifImg.src = "./gifs/team-gi-tablet-portrait-and-mobilef.gif";
   
         setTimeout(() => {
           teamGifImg.style.display = "none";
           flexTeamResponsive.style.display = "flex";
-        }, 700);
+        }, 900);
       } else {
         teamGifImg.src = "./gifs/team-gif.gif";
         setTimeout(() => {
           teamGifImg.style.display = "none";
           flexTeam.style.display = "flex";
-        }, 700);
+        }, 900);
       }
       // localStorage.setItem('gifIsDone', true);
       gifIsDone = true;
