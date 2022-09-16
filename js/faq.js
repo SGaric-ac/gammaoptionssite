@@ -1,9 +1,9 @@
 const faqs = document.getElementById('questions').children;
-const faqSubTitle = document.getElementById('faq').querySelector('span');
+const faqSubTitle = document.querySelector('.faqSubtitle');
 
 const onMouseEnterFaq = event => {
   event.preventDefault();
-  event.target.querySelector('p').style.display = 'block';
+  event.target.querySelector('.faqAnswer').style.display = 'block';
   faqSubTitle.style.color = '#09b9e6';
 
   const img = event.target.querySelector('img');
@@ -13,7 +13,7 @@ const onMouseEnterFaq = event => {
 
 const onMouseLeaveFaq = event => {
   event.preventDefault();
-  event.target.querySelector('p').style.display = 'none';
+  event.target.querySelector('.faqAnswer').style.display = 'none';
   faqSubTitle.style.color = 'white';
 
   const img = event.target.querySelector('img');
@@ -33,7 +33,7 @@ if(!isMobile()){
 
   const onMouseEnterFaqMobile = event => {
     // event.preventDefault();
-    event.target.parentElement.querySelector('p').style.display = 'block';
+    event.target.parentElement.querySelector('.faqAnswer').style.display = 'block';
     faqSubTitle.style.color = '#09b9e6';
   
     const img = event.target.parentElement.querySelector('img');
@@ -44,7 +44,7 @@ if(!isMobile()){
 
   const onMouseLeaveFaqMobile = event => {
     // event.preventDefault();
-    event.target.parentElement.querySelector('p').style.display = 'none';
+    event.target.parentElement.querySelector('.faqAnswer').style.display = 'none';
     faqSubTitle.style.color = 'white';
   
     const img = event.target.parentElement.querySelector('img');
@@ -60,8 +60,6 @@ if(!isMobile()){
   });
 
 }
-
-
 
 Array.from(document.querySelectorAll('a[href="#faq"]')).forEach(link => {
     link.addEventListener("click", (event) => {

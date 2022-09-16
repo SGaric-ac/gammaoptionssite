@@ -3,7 +3,7 @@
 @import "./products.scss";
 @import "./features.scss";
 @import "./team.scss";
-// @import "./faq.scss";
+@import "./faq.scss";
 // @import "./connect.scss";
 
 :root {
@@ -2009,7 +2009,6 @@ html {
   @extend .navUnderline;
   width: var(--selected-nav-item-contact-width) !important;
 }
-
 
 .scrollDisabled {
   overflow: hidden;

@@ -11,6 +11,17 @@
     justify-content: center;
   }
 
+  // .personInformationOverlayDesktop {
+  //   position: fixed;
+  //   top: 0px;
+  //   height: 100vh;
+  //   width: 100vw;
+  //   background-color: black;
+  //   z-index: 300;
+  //   background-image: unset;
+  //   justify-content: center;
+  // }
+
   .visible {
     display: flex !important;
   }
@@ -585,13 +596,6 @@
     width: 100%;
   }
 
-  #team h1 {
-    color: var(--blue);
-    margin-left: 50px;
-    font-size: 70px;
-    font-weight: bolder;
-  }
-
   #flexTeam {
     margin-top: 5%;
     // height: 100%;
@@ -624,18 +628,6 @@
     cursor: pointer;
   }
 
-  .personInformationOverlay {
-    position: fixed;
-    top: 0px;
-    height: 100vh;
-    width: 100vw;
-    background-color: black;
-    z-index: 300;
-    background-image: unset;
-    display: none;
-    justify-content: center;
-  }
-
   .teamGridResponesive {
     display: none;
   }
@@ -647,6 +639,18 @@
   #team > span:nth-child(2) {
     display: none;
   }
+
+  .personInformationContainer {
+    width: 65vw;
+    height: 30vh;
+    background-color: transparent;
+    align-self: center;
+    background-image: unset;
+    display: grid;
+    grid-template-columns: 30% 70%;
+  }
+
+
   
   .personContainer {
     display: flex;
@@ -654,20 +658,19 @@
     align-items: center;
     gap: 15px;
   }
-  
+
   .personNameAndRole{
     display: flex;
     flex-direction: column;
     align-items: center;
   }
   
-  
   .personName {
     display: block;
     font-style: normal;
     color: #0ABAE7;
     font-weight: 500;
-    font-size: 16px;
+    font-size: 20px;
     line-height: 30px;
   }
   
@@ -676,8 +679,93 @@
     font-style: normal;
     color: #8FCE51;
     font-weight: 300;
-    font-size: 15px;
+    font-size: 16px;
     line-height: 31px;
+  }
+
+  .aboutPerson {
+    display: flex;
+    flex-direction: column;
+    background-image: unset;
+    background-color: black;
+    gap: 5px;
+  }
+
+  .redProfileImg {
+    background: transparent;
+    margin: auto;
+    margin-top: 5%;
+  }
+
+  .nameAndLinksToSocialMedia {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    height: 50px;
+    background: transparent;
+    align-items: center;
+  }
+
+  .linksToSocialMedia {
+    display: flex;
+    background: transparent;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .linkToSocialMedia {
+    background: transparent;
+    height: 29px;
+  }
+
+  .textAbout {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 34px;
+    color: var(--white);
+    // margin-left: 30px;
+    background: transparent;
+  }
+
+  .nameAndSurname {
+    // position: absolute;
+    // left: 30px;
+    // align-self: center;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 31px;
+    line-height: 46px;
+    color: var(--blue);
+    background: transparent;
+    text-transform: uppercase;
+  }
+
+  .role {
+    display: block;
+    font-style: normal;
+    color: #8FCE51;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 31px;
+    // margin-left: 30px;
+  }
+
+  .backModalButton {
+    cursor: pointer;
+    border-radius: 5px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 2.56px;
+    text-shadow: 0px 0px 0px #243e453d;
+    border: none;
+    background-color: var(--green);
+    color: var(--white);
+    width: 158px;
+    height: 24px;
+    margin-left: auto;
+    margin-top: 30px;
   }
   
 }
@@ -708,13 +796,6 @@
     width: 100%;
   }
 
-  #team h1 {
-    color: var(--blue);
-    margin-left: 50px;
-    font-size: 70px;
-    font-weight: bolder;
-  }
-
   #flexTeam {
     margin-top: 5%;
     // height: 100%;
@@ -747,18 +828,6 @@
     cursor: pointer;
   }
 
-  .personInformationsOverlay {
-    position: fixed;
-    top: 0px;
-    height: 100vh;
-    width: 100vw;
-    background-color: black;
-    z-index: 300;
-    background-image: unset;
-    display: none;
-    justify-content: center;
-  }
-
   .teamGridResponesive {
     display: none;
   }
@@ -770,6 +839,18 @@
   #team > span:nth-child(2) {
     display: none;
   }
+
+  .personInformationContainer {
+    width: 65vw;
+    height: 30vh;
+    background-color: transparent;
+    align-self: center;
+    background-image: unset;
+    display: grid;
+    grid-template-columns: 30% 70%;
+  }
+
+
   
   .personContainer {
     display: flex;
@@ -777,13 +858,12 @@
     align-items: center;
     gap: 15px;
   }
-  
+
   .personNameAndRole{
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  
   
   .personName {
     display: block;
@@ -801,6 +881,91 @@
     font-weight: 300;
     font-size: 16px;
     line-height: 31px;
+  }
+
+  .aboutPerson {
+    display: flex;
+    flex-direction: column;
+    background-image: unset;
+    background-color: black;
+    gap: 5px;
+  }
+
+  .redProfileImg {
+    background: transparent;
+    margin: auto;
+    margin-top: 5%;
+  }
+
+  .nameAndLinksToSocialMedia {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    height: 50px;
+    background: transparent;
+    align-items: center;
+  }
+
+  .linksToSocialMedia {
+    display: flex;
+    background: transparent;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .linkToSocialMedia {
+    background: transparent;
+    height: 29px;
+  }
+
+  .textAbout {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 34px;
+    color: var(--white);
+    // margin-left: 30px;
+    background: transparent;
+  }
+
+  .nameAndSurname {
+    // position: absolute;
+    // left: 30px;
+    // align-self: center;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 31px;
+    line-height: 46px;
+    color: var(--blue);
+    background: transparent;
+    text-transform: uppercase;
+  }
+
+  .role {
+    display: block;
+    font-style: normal;
+    color: #8FCE51;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 31px;
+    // margin-left: 30px;
+  }
+
+  .backModalButton {
+    cursor: pointer;
+    border-radius: 5px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 2.56px;
+    text-shadow: 0px 0px 0px #243e453d;
+    border: none;
+    background-color: var(--green);
+    color: var(--white);
+    width: 158px;
+    height: 24px;
+    margin-left: auto;
+    margin-top: 30px;
   }
   
 }
