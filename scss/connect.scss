@@ -6,6 +6,7 @@
         height: calc(100vh - var(--nav-height));
         scroll-snap-align: end;
         -webkit-scroll-snap-align: end;
+        width: 95%;
     }
     
     #contact p, #contact span{
@@ -17,7 +18,7 @@
         flex-direction: column-reverse;
         height: 100%;
         // margin-top: 70px;
-        margin-left: 2.5%;
+        // margin-left: 2.5%;
         background: transparent;
     }
     
@@ -29,33 +30,41 @@
     }
     
     
-    #contact p{
+    #contact p {
+        display: block;
         color: white;
-        display: inline;
         font-size: 16px;
         font-weight: 300;
         line-height: 23px;
+        text-align: center;
     }
     
-    #contact p:first-child{
-        display: block;
-    }
+    // #contact p:first-child{
+    //     display: block;
+    // }
 
     .connectGrid > div:first-child p {
         display: block;
         text-align: center;
     }
+
+    .socials {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
     
     .social{
         display: flex;
         flex-direction: column;
+        gap: 5px;
     }
     .social div:first-child{
         display: none;
     }
     
     .social p:last-child{
-        margin-left: 40px !important;
+        margin-left: 23px;
         align-self: center;
     }
     
@@ -66,7 +75,6 @@
         font-size: 15px;
         line-height: 20px;
         text-transform: uppercase;
-        margin-bottom: 10px;
     }
     
     .social >div:last-child{
@@ -83,9 +91,6 @@
         line-height: 29px !important;
     }
     
-    .social:not(:first-child){
-        margin-top: 40px;
-    }
 
     .social div:first-child{
         display: inline;
