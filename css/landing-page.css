@@ -1886,11 +1886,8 @@
     display: inline; }
   .footer {
     display: none; }
-  .backToTopImgMobile {
-    margin: auto;
-    height: 50px; }
   .backToTopImg {
-    display: none;
+    display: block;
     margin: auto;
     height: 50px; }
   #connectLogoDiv {
@@ -1903,6 +1900,85 @@
     background-position-y: 100%;
     background-size: 30%;
     height: 30%; } }
+
+@media only screen and (max-width: 768px) and (min-width: 481px) {
+  #contact {
+    max-width: 768px;
+    margin: auto;
+    height: calc(100vh - var(--nav-height));
+    scroll-snap-align: end;
+    -webkit-scroll-snap-align: end;
+    width: 95%; }
+  #contact p, #contact span {
+    background: transparent; }
+  .connectGrid {
+    display: flex;
+    flex-direction: column-reverse;
+    height: 100%;
+    background: transparent; }
+  #contact span {
+    color: var(--blue);
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 23px; }
+  #contact p {
+    display: block;
+    color: white;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 23px;
+    text-align: center; }
+  .connectGrid > div:first-child p {
+    display: block;
+    text-align: center; }
+  .socials {
+    display: flex;
+    flex-direction: column;
+    gap: 40px; }
+  .social {
+    display: grid;
+    grid-template-columns: 1fr 1fr; }
+  .social div:first-child {
+    display: none; }
+  .social p:last-child {
+    margin-left: 23px;
+    align-self: center; }
+  .social > p {
+    margin-right: auto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 29px !important;
+    text-transform: lowercase;
+    align-self: center; }
+  .social > div:last-child {
+    display: flex;
+    cursor: pointer; }
+  .social > div > p {
+    align-self: center;
+    color: var(--white) !important;
+    font-weight: 275 !important;
+    font-style: normal !important;
+    font-size: 16px !important;
+    line-height: 29px !important; }
+  .social div:first-child {
+    display: inline; }
+  .footer {
+    margin: auto;
+    height: 50px; }
+  .backToTopImg {
+    display: block;
+    margin: auto;
+    height: 50px; }
+  #connectLogoDiv {
+    height: 98%;
+    background-position-y: top;
+    background: url("./../gifs/green-mobile.gif");
+    background-repeat: no-repeat;
+    filter: drop-shadow(-1px -3px 5px rgba(143, 206, 81, 0.15)) drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.5));
+    background-position-x: center;
+    background-position-y: 100%;
+    background-size: 30%; } }
 
 :root {
   --black: #000000;

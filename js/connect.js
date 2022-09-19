@@ -1,5 +1,5 @@
 const backToTopImg = document.querySelector('.backToTopImg');
-const backToTopImgMobile = document.querySelector('.backToTopImgMobile');
+// const backToTopImgMobile = document.querySelector('.backToTopImgMobile');
 
 
 Array.from(document.querySelectorAll('a[href="#contact"]')).forEach(link => {
@@ -45,4 +45,4 @@ Array.from(document.querySelectorAll('a[href="#contact"]')).forEach(link => {
   }
 
   backToTopImg.addEventListener('click', backToTop);
-  backToTopImgMobile.addEventListener('click', backToTop);
+  // backToTopImgMobile.addEventListener('click', backToTop);
