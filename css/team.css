@@ -452,14 +452,14 @@
     font-style: normal;
     color: #0ABAE7;
     font-weight: 500;
-    font-size: 20px;
+    font-size: 17px;
     line-height: 30px; }
   .personRole {
     display: block;
     font-style: normal;
     color: #8FCE51;
     font-weight: 300;
-    font-size: 16px;
+    font-size: 15px;
     line-height: 31px; }
   .aboutPerson {
     display: flex;
@@ -541,7 +541,7 @@
   #team > img {
     width: 100%; }
   #flexTeam {
-    margin-top: 5%;
+    margin-top: 2%;
     height: calc(90vh - var(--nav-height) - 106px);
     width: 100%;
     display: none;

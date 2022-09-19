@@ -124,10 +124,10 @@ createScrollStopListener(window, function() {
         page: 'team',
         top: document.getElementById('team').getBoundingClientRect().top
       },
-      // {
-      //   page: 'faq',
-      //   top: document.getElementById('faq').getBoundingClientRect().top
-      // },
+      {
+        page: 'faq',
+        top: document.getElementById('faq').getBoundingClientRect().top
+      },
       // {
       //   page: 'contact',
       //   top: document.getElementById('contact').getBoundingClientRect().top
