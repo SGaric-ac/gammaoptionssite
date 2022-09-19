@@ -1,6 +1,6 @@
 // MOBILE
 @media only screen and (max-width: 480px) and (min-width: 320px) {
-    #connect{
+    #contact{
         max-width: 480px;
         margin: auto;
         height: calc(100vh - var(--nav-height));
@@ -8,7 +8,7 @@
         -webkit-scroll-snap-align: end;
     }
     
-    #connect p, #connect span{
+    #contact p, #contact span{
         background: transparent;
     }
     
@@ -21,7 +21,7 @@
         background: transparent;
     }
     
-    #connect span{
+    #contact span{
         color: var(--blue);
         font-size: 16px;
         font-weight: 300;
@@ -29,7 +29,7 @@
     }
     
     
-    #connect p{
+    #contact p{
         color: white;
         display: inline;
         font-size: 16px;
@@ -37,7 +37,7 @@
         line-height: 23px;
     }
     
-    #connect p:first-child{
+    #contact p:first-child{
         display: block;
     }
 

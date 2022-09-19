@@ -6,6 +6,7 @@ const buttonTrade = document.getElementById("trade");
 const firstPage = document.getElementById('firstPage');
 const products = document.getElementById("products");
 const features = document.getElementById("features");
+const contact = document.getElementById("contact");
 const burgerButton = document.getElementById("burger");
 const overlayMobileMenu = document.getElementById("overlayMobileMenu");
 const menu = document.getElementById("menu");
