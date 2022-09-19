@@ -128,10 +128,10 @@ createScrollStopListener(window, function() {
         page: 'faq',
         top: document.getElementById('faq').getBoundingClientRect().top
       },
-      // {
-      //   page: 'contact',
-      //   top: document.getElementById('contact').getBoundingClientRect().top
-      // },
+      {
+        page: 'contact',
+        top: document.getElementById('contact').getBoundingClientRect().top
+      },
     ];
 
     topPositions.forEach(tp => {

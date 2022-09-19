@@ -19,7 +19,7 @@
         font-size: 31px;
         font-style: normal;
         font-weight: 600;
-        line-height: 46.5px;
+        line-height: 60.5px;
         letter-spacing: 0.2em;
         user-select: none;
     }
@@ -31,7 +31,7 @@
         font-style: normal;
         font-weight: 300;
         font-size: 20px;
-        line-height: 34.5px;
+        line-height: 64.5px;
         letter-spacing: -0.01em;
         user-select: none;
     }
@@ -76,8 +76,8 @@
         grid-area: 'question';
         font-style: normal;
         font-weight: 300;
-        font-size: 20px;
-        line-height: 44px;
+        font-size: 18px;
+        line-height: 30px;
         color: var(--blue) !important;
         padding-left: 5%;
         user-select: none;
@@ -88,9 +88,9 @@
         grid-area: 'answer';
         width: 100%;
         color: #898989;
-        font-size: 20px;
+        font-size: 15px;
         font-weight: 275;
-        line-height: 34px;
+        line-height: 30px;
         font-style: normal;
         transition: display 1.5s ease-out;
         padding-left: 5%;
