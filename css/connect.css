@@ -6,7 +6,8 @@
     scroll-snap-align: end;
     -webkit-scroll-snap-align: end;
     width: 95%; }
-  #contact p, #contact span {
+  #contact p,
+  #contact span {
     background: transparent; }
   .connectGrid {
     display: flex;
@@ -81,7 +82,8 @@
     scroll-snap-align: end;
     -webkit-scroll-snap-align: end;
     width: 95%; }
-  #contact p, #contact span {
+  #contact p,
+  #contact span {
     background: transparent; }
   .connectGrid {
     display: flex;
@@ -93,7 +95,7 @@
     color: var(--blue);
     font-size: 16px;
     font-weight: 300;
-    line-height: 60px; }
+    line-height: 20px; }
   #contact p {
     display: block;
     color: white;
@@ -106,7 +108,7 @@
   .socials {
     display: flex;
     flex-direction: column;
-    gap: 40px; }
+    gap: 20px; }
   .social {
     display: grid;
     grid-template-columns: 1fr 1fr; }
@@ -135,9 +137,89 @@
     line-height: 29px !important; }
   .social div:first-child {
     display: inline; }
-  .footer {
+  #contact .footer {
+    color: var(--blue);
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 120px; }
+  .backToTopImg {
+    display: block;
     margin: auto;
     height: 50px; }
+  .connectLogo {
+    content: url("./../gifs/contactPage.gif");
+    width: 220px;
+    height: 278px;
+    margin: 0 auto; } }
+
+@media only screen and (max-width: 1024px) and (min-width: 769px) {
+  #contact {
+    max-width: 1024px;
+    margin: auto;
+    height: calc(100vh - var(--nav-height));
+    scroll-snap-align: end;
+    -webkit-scroll-snap-align: end;
+    width: 95%; }
+  #contact p,
+  #contact span {
+    background: transparent; }
+  .connectGrid {
+    display: flex;
+    flex-direction: column-reverse;
+    height: 90%;
+    background: transparent;
+    justify-content: space-around; }
+  #contact span {
+    color: var(--blue);
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 20px; }
+  #contact p {
+    display: block;
+    color: white;
+    font-size: 16px;
+    font-weight: 300;
+    text-align: left; }
+  .connectGrid > div:first-child p {
+    display: block;
+    text-align: center; }
+  .socials {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; }
+  .social {
+    display: grid;
+    grid-template-columns: 1fr 1fr; }
+  .social div:first-child {
+    display: none; }
+  .social p:last-child {
+    margin-left: 23px;
+    align-self: center; }
+  .social > p {
+    margin-right: auto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 29px !important;
+    text-transform: lowercase;
+    align-self: center; }
+  .social > div:last-child {
+    display: flex;
+    cursor: pointer; }
+  .social > div > p {
+    align-self: center;
+    color: var(--white) !important;
+    font-weight: 275 !important;
+    font-style: normal !important;
+    font-size: 16px !important;
+    line-height: 29px !important; }
+  .social div:first-child {
+    display: inline; }
+  #contact .footer {
+    color: var(--blue);
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 120px; }
   .backToTopImg {
     display: block;
     margin: auto;

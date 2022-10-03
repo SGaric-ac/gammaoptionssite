@@ -1,255 +1,399 @@
 // MOBILE
 @media only screen and (max-width: 480px) and (min-width: 320px) {
-    #contact{
-        max-width: 480px;
-        margin: auto;
-        height: calc(100vh - var(--nav-height));
-        scroll-snap-align: end;
-        -webkit-scroll-snap-align: end;
-        width: 95%;
-    }
-    
-    #contact p, #contact span{
-        background: transparent;
-    }
-    
-    .connectGrid{
-        display: flex;
-        flex-direction: column-reverse;
-        height: 90%;
-        // margin-top: 70px;
-        // margin-left: 2.5%;
-        background: transparent;
-        // justify-content: flex-end;
-        justify-content: space-evenly;
-    }
-    
-    #contact span{
-        color: var(--blue);
-        font-size: 16px;
-        font-weight: 300;
-        line-height: 23px;
-    }
-    
-    
-    #contact p {
-        display: block;
-        color: white;
-        font-size: 16px;
-        font-weight: 300;
-        line-height: 23px;
-        text-align: center;
-    }
-    
-    // #contact p:first-child{
-    //     display: block;
-    // }
+  #contact {
+    max-width: 480px;
+    margin: auto;
+    height: calc(100vh - var(--nav-height));
+    scroll-snap-align: end;
+    -webkit-scroll-snap-align: end;
+    width: 95%;
+  }
 
-    .connectGrid > div:first-child p {
-        display: block;
-        text-align: center;
-    }
+  #contact p,
+  #contact span {
+    background: transparent;
+  }
 
-    .socials {
-        display: flex;
-        flex-direction: column;
-        gap: 15px;
-    }
-    
-    .social{
-        display: flex;
-        flex-direction: column;
-        gap: 5px;
-    }
-    .social div:first-child{
-        display: none;
-    }
-    
-    .social p:last-child{
-        margin-left: 23px;
-        align-self: center;
-    }
-    
-    .social > p{
-        margin-right: auto;
-        font-style: normal;
-        font-weight: 300;
-        font-size: 15px;
-        line-height: 20px;
-        text-transform: uppercase;
-    }
-    
-    .social >div:last-child{
-        display: flex;
-        cursor: pointer;
-    }
-    
-    .social > div > p{
-        align-self: center;
-        color: var(--blue) !important;
-        font-weight: 275 !important;
-        font-style: normal !important;
-        font-size: 16px !important;
-        line-height: 29px !important;
-    }
-    
+  .connectGrid {
+    display: flex;
+    flex-direction: column-reverse;
+    height: 90%;
+    // margin-top: 70px;
+    // margin-left: 2.5%;
+    background: transparent;
+    // justify-content: flex-end;
+    justify-content: space-evenly;
+  }
 
-    .social div:first-child{
-        display: inline;
-    }
-    
-    .footer{
-        display: none;
-    }
+  #contact span {
+    color: var(--blue);
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 23px;
+  }
 
-    // .backToTopImgMobile {
-    //     margin: auto;
-    //     height: 50px;
-    // }
-    
-    .backToTopImg{
-        display: block;
-        margin: auto;
-        height: 50px;
-    }
-    
-    // #connectLogoDiv{
-    //     height: 98%;
-    //     background-position-y: top;
-    //     background: url('./../gifs/green-mobile.gif');
-    //     background-repeat: no-repeat;
-    //     // margin-top: -10px;
-    //     filter: drop-shadow(-1px -3px 5px rgba(143, 206, 81, 0.15)) drop-shadow(4px 4px 4px rgba(0,0,0,0.5));
-    //     background-position-x: center;
-    //     // background-position-x: 30%;
-    //     background-position-y: 100%;
-    //     background-size: 30%;
-    //     height: 30%;
-    // }   
+  #contact p {
+    display: block;
+    color: white;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 23px;
+    text-align: center;
+  }
 
-    .connectLogo {
-        content: url('./../gifs/contactPage.gif');
-        width: 200px;
-        height: 258px;
-        margin: 0 auto;
-    }
+  // #contact p:first-child{
+  //     display: block;
+  // }
+
+  .connectGrid > div:first-child p {
+    display: block;
+    text-align: center;
+  }
+
+  .socials {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .social {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  .social div:first-child {
+    display: none;
+  }
+
+  .social p:last-child {
+    margin-left: 23px;
+    align-self: center;
+  }
+
+  .social > p {
+    margin-right: auto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 20px;
+    text-transform: uppercase;
+  }
+
+  .social > div:last-child {
+    display: flex;
+    cursor: pointer;
+  }
+
+  .social > div > p {
+    align-self: center;
+    color: var(--blue) !important;
+    font-weight: 275 !important;
+    font-style: normal !important;
+    font-size: 16px !important;
+    line-height: 29px !important;
+  }
+
+  .social div:first-child {
+    display: inline;
+  }
+
+  .footer {
+    display: none;
+  }
+
+  // .backToTopImgMobile {
+  //     margin: auto;
+  //     height: 50px;
+  // }
+
+  .backToTopImg {
+    display: block;
+    margin: auto;
+    height: 50px;
+  }
+
+  // #connectLogoDiv{
+  //     height: 98%;
+  //     background-position-y: top;
+  //     background: url('./../gifs/green-mobile.gif');
+  //     background-repeat: no-repeat;
+  //     // margin-top: -10px;
+  //     filter: drop-shadow(-1px -3px 5px rgba(143, 206, 81, 0.15)) drop-shadow(4px 4px 4px rgba(0,0,0,0.5));
+  //     background-position-x: center;
+  //     // background-position-x: 30%;
+  //     background-position-y: 100%;
+  //     background-size: 30%;
+  //     height: 30%;
+  // }
+
+  .connectLogo {
+    content: url("./../gifs/contactPage.gif");
+    width: 200px;
+    height: 258px;
+    margin: 0 auto;
+  }
 }
 
 //MINI TABLET
 @media only screen and (max-width: 768px) and (min-width: 481px) {
-    #contact{
-        max-width: 768px;
-        margin: auto;
-        height: calc(100vh - var(--nav-height));
-        scroll-snap-align: end;
-        -webkit-scroll-snap-align: end;
-        width: 95%;
+  #contact {
+    max-width: 768px;
+    margin: auto;
+    height: calc(100vh - var(--nav-height));
+    scroll-snap-align: end;
+    -webkit-scroll-snap-align: end;
+    width: 95%;
+  }
+
+  #contact p,
+  #contact span {
+    background: transparent;
+  }
+
+  .connectGrid {
+    display: flex;
+    flex-direction: column-reverse;
+    height: 90%;
+    // margin-top: 70px;
+    // margin-left: 2.5%;
+    background: transparent;
+    justify-content: space-around;
+  }
+
+  #contact span {
+    color: var(--blue);
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 20px;
+  }
+
+  #contact p {
+    display: block;
+    color: white;
+    font-size: 16px;
+    font-weight: 300;
+    // line-height: 23px;
+    text-align: left;
+  }
+
+  // #contact p:first-child{
+  //     display: block;
+  // }
+
+  .connectGrid > div:first-child p {
+    display: block;
+    text-align: center;
+  }
+
+  .socials {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .social {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    // width: 50%;
+    // flex-direction: column;
+    // gap: 5px;
+  }
+  .social div:first-child {
+    display: none;
+  }
+
+  .social p:last-child {
+    margin-left: 23px;
+    align-self: center;
+  }
+
+  .social > p {
+    // width: 50%;
+    margin-right: auto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 29px !important;
+    text-transform: lowercase;
+    align-self: center;
+  }
+
+  .social > div:last-child {
+    display: flex;
+    cursor: pointer;
+  }
+
+  .social > div > p {
+    align-self: center;
+    // color: var(--blue) !important;
+    color: var(--white) !important;
+    font-weight: 275 !important;
+    font-style: normal !important;
+    font-size: 16px !important;
+    line-height: 29px !important;
+  }
+
+  .social div:first-child {
+    display: inline;
+  }
+
+  #contact .footer {
+    // margin: auto;
+    color: var(--blue);
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 120px;
+  }
+
+  .backToTopImg {
+    display: block;
+    margin: auto;
+    height: 50px;
+  }
+
+  // #connectLogoDiv{
+  //     height: 98%;
+  //     background-position-y: top;
+  //     background: url('./../gifs/green-mobile.gif');
+  //     background-repeat: no-repeat;
+  //     // margin-top: -10px;
+  //     filter: drop-shadow(-1px -3px 5px rgba(143, 206, 81, 0.15)) drop-shadow(4px 4px 4px rgba(0,0,0,0.5));
+  //     background-position-x: center;
+  //     // background-position-x: 30%;
+  //     background-position-y: 100%;
+  //     background-size: 30%;
+  // }
+
+  .connectLogo {
+    content: url("./../gifs/contactPage.gif");
+    width: 220px;
+    height: 278px;
+    margin: 0 auto;
+  }
+
+  // .contactInformationContainer {
+  //     display: flex;
+  //     flex-direction: column;
+  //     justify-content: space-between;
+  // }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 769px) {
+    #contact {
+      max-width: 1024px;
+      margin: auto;
+      height: calc(100vh - var(--nav-height));
+      scroll-snap-align: end;
+      -webkit-scroll-snap-align: end;
+      width: 95%;
     }
-    
-    #contact p, #contact span{
-        background: transparent;
+  
+    #contact p,
+    #contact span {
+      background: transparent;
     }
-    
-    .connectGrid{
-        display: flex;
-        flex-direction: column-reverse;
-        height: 90%;
-        // margin-top: 70px;
-        // margin-left: 2.5%;
-        background: transparent;
-        justify-content: space-around;
+  
+    .connectGrid {
+      display: flex;
+      flex-direction: column-reverse;
+      height: 90%;
+      // margin-top: 70px;
+      // margin-left: 2.5%;
+      background: transparent;
+      justify-content: space-around;
     }
-    
-    #contact span{
-        color: var(--blue);
-        font-size: 16px;
-        font-weight: 300;
-        line-height: 60px;
+  
+    #contact span {
+      color: var(--blue);
+      font-size: 16px;
+      font-weight: 300;
+      line-height: 20px;
     }
-    
-    
+  
     #contact p {
-        display: block;
-        color: white;
-        font-size: 16px;
-        font-weight: 300;
-        // line-height: 23px;
-        text-align: left;
+      display: block;
+      color: white;
+      font-size: 16px;
+      font-weight: 300;
+      // line-height: 23px;
+      text-align: left;
     }
-    
+  
     // #contact p:first-child{
     //     display: block;
     // }
-
+  
     .connectGrid > div:first-child p {
-        display: block;
-        text-align: center;
+      display: block;
+      text-align: center;
     }
-
+  
     .socials {
-        display: flex;
-        flex-direction: column;
-        gap: 40px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
     }
-    
-    .social{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        // width: 50%;
-        // flex-direction: column;
-        // gap: 5px;
+  
+    .social {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      // width: 50%;
+      // flex-direction: column;
+      // gap: 5px;
     }
-    .social div:first-child{
-        display: none;
+    .social div:first-child {
+      display: none;
     }
-    
-    .social p:last-child{
-        margin-left: 23px;
-        align-self: center;
+  
+    .social p:last-child {
+      margin-left: 23px;
+      align-self: center;
     }
-    
+  
     .social > p {
-        // width: 50%;
-        margin-right: auto;
-        font-style: normal;
-        font-weight: 300;
-        font-size: 16px;
-        line-height: 29px !important;
-        text-transform: lowercase;
-        align-self: center;
+      // width: 50%;
+      margin-right: auto;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 29px !important;
+      text-transform: lowercase;
+      align-self: center;
     }
-    
-    .social >div:last-child{
-        display: flex;
-        cursor: pointer;
+  
+    .social > div:last-child {
+      display: flex;
+      cursor: pointer;
     }
-    
-    .social > div > p{
-        align-self: center;
-        // color: var(--blue) !important;
-        color: var(--white) !important;
-        font-weight: 275 !important;
-        font-style: normal !important;
-        font-size: 16px !important;
-        line-height: 29px !important;
+  
+    .social > div > p {
+      align-self: center;
+      // color: var(--blue) !important;
+      color: var(--white) !important;
+      font-weight: 275 !important;
+      font-style: normal !important;
+      font-size: 16px !important;
+      line-height: 29px !important;
     }
-    
-
-    .social div:first-child{
-        display: inline;
+  
+    .social div:first-child {
+      display: inline;
     }
-    
-    .footer{
-        margin: auto;
-        height: 50px;
+  
+    #contact .footer {
+      // margin: auto;
+      color: var(--blue);
+      font-size: 16px;
+      font-weight: 300;
+      line-height: 120px;
     }
-    
-    .backToTopImg{
-        display: block;
-        margin: auto;
-        height: 50px;
+  
+    .backToTopImg {
+      display: block;
+      margin: auto;
+      height: 50px;
     }
-    
+  
     // #connectLogoDiv{
     //     height: 98%;
     //     background-position-y: top;
@@ -262,11 +406,17 @@
     //     background-position-y: 100%;
     //     background-size: 30%;
     // }
-
+  
     .connectLogo {
-        content: url('./../gifs/contactPage.gif');
-        width: 220px;
-        height: 278px;
-        margin: 0 auto;
+      content: url("./../gifs/contactPage.gif");
+      width: 220px;
+      height: 278px;
+      margin: 0 auto;
     }
-}
+  
+    // .contactInformationContainer {
+    //     display: flex;
+    //     flex-direction: column;
+    //     justify-content: space-between;
+    // }
+  }
