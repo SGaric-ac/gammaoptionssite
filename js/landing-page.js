@@ -61,7 +61,6 @@ appImg.addEventListener("mouseleave", leaveAppImgArea);
 // document.querySelector('a[href="#"]').addEventListener("click", event => {
 document.querySelector('.logo').addEventListener("click", event => {
     event.preventDefault();
-
     window.scrollTo({top:0, behavior: 'smooth'});
 
     overlayMobileMenu.style.display = "none";
@@ -78,6 +77,7 @@ burgerButton.addEventListener("click", event => {
   // document.querySelector("#navbar ul").style.marginRight = "45px";
   Array.from(burgerButton.getElementsByTagName("div")).forEach((d) => {
     d.classList.add("burgerClicked");
+    document.body.classList.remove('scrollDisabled');
   });
 });
 
