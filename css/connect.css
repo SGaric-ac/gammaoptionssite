@@ -11,8 +11,9 @@
   .connectGrid {
     display: flex;
     flex-direction: column-reverse;
-    height: 100%;
-    background: transparent; }
+    height: 90%;
+    background: transparent;
+    justify-content: space-evenly; }
   #contact span {
     color: var(--blue);
     font-size: 16px;
@@ -31,7 +32,7 @@
   .socials {
     display: flex;
     flex-direction: column;
-    gap: 40px; }
+    gap: 15px; }
   .social {
     display: flex;
     flex-direction: column;
@@ -66,16 +67,11 @@
     display: block;
     margin: auto;
     height: 50px; }
-  #connectLogoDiv {
-    height: 98%;
-    background-position-y: top;
-    background: url("./../gifs/green-mobile.gif");
-    background-repeat: no-repeat;
-    filter: drop-shadow(-1px -3px 5px rgba(143, 206, 81, 0.15)) drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.5));
-    background-position-x: center;
-    background-position-y: 100%;
-    background-size: 30%;
-    height: 30%; } }
+  .connectLogo {
+    content: url("./../gifs/contactPage.gif");
+    width: 200px;
+    height: 258px;
+    margin: 0 auto; } }
 
 @media only screen and (max-width: 768px) and (min-width: 481px) {
   #contact {
@@ -90,20 +86,20 @@
   .connectGrid {
     display: flex;
     flex-direction: column-reverse;
-    height: 100%;
-    background: transparent; }
+    height: 90%;
+    background: transparent;
+    justify-content: space-around; }
   #contact span {
     color: var(--blue);
     font-size: 16px;
     font-weight: 300;
-    line-height: 23px; }
+    line-height: 60px; }
   #contact p {
     display: block;
     color: white;
     font-size: 16px;
     font-weight: 300;
-    line-height: 23px;
-    text-align: center; }
+    text-align: left; }
   .connectGrid > div:first-child p {
     display: block;
     text-align: center; }
@@ -146,12 +142,8 @@
     display: block;
     margin: auto;
     height: 50px; }
-  #connectLogoDiv {
-    height: 98%;
-    background-position-y: top;
-    background: url("./../gifs/green-mobile.gif");
-    background-repeat: no-repeat;
-    filter: drop-shadow(-1px -3px 5px rgba(143, 206, 81, 0.15)) drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.5));
-    background-position-x: center;
-    background-position-y: 100%;
-    background-size: 30%; } }
+  .connectLogo {
+    content: url("./../gifs/contactPage.gif");
+    width: 220px;
+    height: 278px;
+    margin: 0 auto; } }

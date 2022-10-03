@@ -16,10 +16,12 @@
     .connectGrid{
         display: flex;
         flex-direction: column-reverse;
-        height: 100%;
+        height: 90%;
         // margin-top: 70px;
         // margin-left: 2.5%;
         background: transparent;
+        // justify-content: flex-end;
+        justify-content: space-evenly;
     }
     
     #contact span{
@@ -51,7 +53,7 @@
     .socials {
         display: flex;
         flex-direction: column;
-        gap: 40px;
+        gap: 15px;
     }
     
     .social{
@@ -111,19 +113,26 @@
         height: 50px;
     }
     
-    #connectLogoDiv{
-        height: 98%;
-        background-position-y: top;
-        background: url('./../gifs/green-mobile.gif');
-        background-repeat: no-repeat;
-        // margin-top: -10px;
-        filter: drop-shadow(-1px -3px 5px rgba(143, 206, 81, 0.15)) drop-shadow(4px 4px 4px rgba(0,0,0,0.5));
-        background-position-x: center;
-        // background-position-x: 30%;
-        background-position-y: 100%;
-        background-size: 30%;
-        height: 30%;
-    }   
+    // #connectLogoDiv{
+    //     height: 98%;
+    //     background-position-y: top;
+    //     background: url('./../gifs/green-mobile.gif');
+    //     background-repeat: no-repeat;
+    //     // margin-top: -10px;
+    //     filter: drop-shadow(-1px -3px 5px rgba(143, 206, 81, 0.15)) drop-shadow(4px 4px 4px rgba(0,0,0,0.5));
+    //     background-position-x: center;
+    //     // background-position-x: 30%;
+    //     background-position-y: 100%;
+    //     background-size: 30%;
+    //     height: 30%;
+    // }   
+
+    .connectLogo {
+        content: url('./../gifs/contactPage.gif');
+        width: 200px;
+        height: 258px;
+        margin: 0 auto;
+    }
 }
 
 //MINI TABLET
@@ -144,17 +153,18 @@
     .connectGrid{
         display: flex;
         flex-direction: column-reverse;
-        height: 100%;
+        height: 90%;
         // margin-top: 70px;
         // margin-left: 2.5%;
         background: transparent;
+        justify-content: space-around;
     }
     
     #contact span{
         color: var(--blue);
         font-size: 16px;
         font-weight: 300;
-        line-height: 23px;
+        line-height: 60px;
     }
     
     
@@ -163,8 +173,8 @@
         color: white;
         font-size: 16px;
         font-weight: 300;
-        line-height: 23px;
-        text-align: center;
+        // line-height: 23px;
+        text-align: left;
     }
     
     // #contact p:first-child{
@@ -240,16 +250,23 @@
         height: 50px;
     }
     
-    #connectLogoDiv{
-        height: 98%;
-        background-position-y: top;
-        background: url('./../gifs/green-mobile.gif');
-        background-repeat: no-repeat;
-        // margin-top: -10px;
-        filter: drop-shadow(-1px -3px 5px rgba(143, 206, 81, 0.15)) drop-shadow(4px 4px 4px rgba(0,0,0,0.5));
-        background-position-x: center;
-        // background-position-x: 30%;
-        background-position-y: 100%;
-        background-size: 30%;
+    // #connectLogoDiv{
+    //     height: 98%;
+    //     background-position-y: top;
+    //     background: url('./../gifs/green-mobile.gif');
+    //     background-repeat: no-repeat;
+    //     // margin-top: -10px;
+    //     filter: drop-shadow(-1px -3px 5px rgba(143, 206, 81, 0.15)) drop-shadow(4px 4px 4px rgba(0,0,0,0.5));
+    //     background-position-x: center;
+    //     // background-position-x: 30%;
+    //     background-position-y: 100%;
+    //     background-size: 30%;
+    // }
+
+    .connectLogo {
+        content: url('./../gifs/contactPage.gif');
+        width: 220px;
+        height: 278px;
+        margin: 0 auto;
     }
 }
