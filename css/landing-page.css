@@ -2054,6 +2054,148 @@
     height: 278px;
     margin: 0 auto; } }
 
+@media only screen and (max-width: 1200px) and (min-width: 1025px) {
+  #contact {
+    max-width: 1200px;
+    margin: auto;
+    height: calc(100vh - var(--nav-height));
+    scroll-snap-align: end;
+    -webkit-scroll-snap-align: end;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly; }
+  #contact p,
+  #contact span {
+    background: transparent; }
+  .connectGrid {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    margin-left: 50px;
+    background: transparent; }
+  #contact span {
+    color: var(--blue);
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 23px; }
+  #contact p {
+    color: white;
+    display: inline;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 23px; }
+  #contact p:first-child {
+    display: block; }
+  .contactInformationContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative; }
+  .contactInformationContainer > p:nth-child(2) {
+    position: absolute;
+    top: 23px; }
+  .socials {
+    display: flex;
+    flex-direction: column;
+    gap: 25px; }
+  .social {
+    display: grid;
+    grid-template-columns: 1fr 1fr; }
+  .social div:first-child {
+    display: none; }
+  .social p:last-child {
+    margin-left: 25px !important;
+    align-self: center; }
+  .social > div:last-child {
+    display: flex;
+    cursor: pointer; }
+  .social > div > p {
+    align-self: center; }
+  #contact .footer {
+    color: var(--blue);
+    font-size: 16px;
+    font-weight: 300; }
+  .backToTopImg {
+    height: 70px;
+    width: 70px;
+    cursor: pointer;
+    align-self: center; }
+  .connectLogo {
+    content: url("./../gifs/contactPage.gif");
+    width: 348px;
+    height: 430px;
+    margin: auto; } }
+
+@media only screen and (min-width: 1201px) {
+  #contact {
+    max-width: 1500px;
+    margin: auto;
+    height: calc(100vh - var(--nav-height));
+    scroll-snap-align: end;
+    -webkit-scroll-snap-align: end;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly; }
+  #contact p,
+  #contact span {
+    background: transparent; }
+  .connectGrid {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    margin-left: 50px;
+    background: transparent; }
+  #contact span {
+    color: var(--blue);
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 23px; }
+  #contact p {
+    color: white;
+    display: inline;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 23px; }
+  #contact p:first-child {
+    display: block; }
+  .contactInformationContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative; }
+  .contactInformationContainer > p:nth-child(2) {
+    position: absolute;
+    top: 23px; }
+  .socials {
+    display: flex;
+    flex-direction: column;
+    gap: 25px; }
+  .social {
+    display: grid;
+    grid-template-columns: 1fr 1fr; }
+  .social div:first-child {
+    display: none; }
+  .social p:last-child {
+    margin-left: 25px !important;
+    align-self: center; }
+  .social > div:last-child {
+    display: flex;
+    cursor: pointer; }
+  .social > div > p {
+    align-self: center; }
+  #contact .footer {
+    color: var(--blue);
+    font-size: 16px;
+    font-weight: 300; }
+  .backToTopImg {
+    height: 70px;
+    width: 70px;
+    cursor: pointer;
+    align-self: center; }
+  .connectLogo {
+    content: url("./../gifs/contactPage.gif");
+    width: 348px;
+    height: 430px;
+    margin: auto; } }
+
 :root {
   --black: #000000;
   --blue: #09b9e6;
